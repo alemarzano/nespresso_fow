@@ -1,0 +1,943 @@
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-SemiBdItalic.eot");
+  src: url("fonts/NespressoLucas-SemiBdItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-SemiBdItalic.woff2") format("woff2"), url("fonts/NespressoLucas-SemiBdItalic.woff") format("woff"), url("fonts/NespressoLucas-SemiBdItalic.ttf") format("truetype"), url("fonts/NespressoLucas-SemiBdItalic.svg#NespressoLucas-SemiBdItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-MedItalic.eot");
+  src: url("fonts/NespressoLucas-MedItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-MedItalic.woff2") format("woff2"), url("fonts/NespressoLucas-MedItalic.woff") format("woff"), url("fonts/NespressoLucas-MedItalic.ttf") format("truetype"), url("fonts/NespressoLucas-MedItalic.svg#NespressoLucas-MedItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-Med.eot");
+  src: url("fonts/NespressoLucas-Med.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Med.woff2") format("woff2"), url("fonts/NespressoLucas-Med.woff") format("woff"), url("fonts/NespressoLucas-Med.ttf") format("truetype"), url("fonts/NespressoLucas-Med.svg#NespressoLucas-Med") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-Italic.eot");
+  src: url("fonts/NespressoLucas-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Italic.woff2") format("woff2"), url("fonts/NespressoLucas-Italic.woff") format("woff"), url("fonts/NespressoLucas-Italic.ttf") format("truetype"), url("fonts/NespressoLucas-Italic.svg#NespressoLucas-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-LightItalic.eot");
+  src: url("fonts/NespressoLucas-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-LightItalic.woff2") format("woff2"), url("fonts/NespressoLucas-LightItalic.woff") format("woff"), url("fonts/NespressoLucas-LightItalic.ttf") format("truetype"), url("fonts/NespressoLucas-LightItalic.svg#NespressoLucas-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-BoldItalic.eot");
+  src: url("fonts/NespressoLucas-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-BoldItalic.woff2") format("woff2"), url("fonts/NespressoLucas-BoldItalic.woff") format("woff"), url("fonts/NespressoLucas-BoldItalic.ttf") format("truetype"), url("fonts/NespressoLucas-BoldItalic.svg#NespressoLucas-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-XtraBd.eot");
+  src: url("fonts/NespressoLucas-XtraBd.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-XtraBd.woff2") format("woff2"), url("fonts/NespressoLucas-XtraBd.woff") format("woff"), url("fonts/NespressoLucas-XtraBd.ttf") format("truetype"), url("fonts/NespressoLucas-XtraBd.svg#NespressoLucas-XtraBd") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-Bold.eot");
+  src: url("fonts/NespressoLucas-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Bold.woff2") format("woff2"), url("fonts/NespressoLucas-Bold.woff") format("woff"), url("fonts/NespressoLucas-Bold.ttf") format("truetype"), url("fonts/NespressoLucas-Bold.svg#NespressoLucas-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-SemiBd.eot");
+  src: url("fonts/NespressoLucas-SemiBd.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-SemiBd.woff2") format("woff2"), url("fonts/NespressoLucas-SemiBd.woff") format("woff"), url("fonts/NespressoLucas-SemiBd.ttf") format("truetype"), url("fonts/NespressoLucas-SemiBd.svg#NespressoLucas-SemiBd") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-XtraBdItalic.eot");
+  src: url("fonts/NespressoLucas-XtraBdItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-XtraBdItalic.woff2") format("woff2"), url("fonts/NespressoLucas-XtraBdItalic.woff") format("woff"), url("fonts/NespressoLucas-XtraBdItalic.ttf") format("truetype"), url("fonts/NespressoLucas-XtraBdItalic.svg#NespressoLucas-XtraBdItalic") format("svg");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-Light.eot");
+  src: url("fonts/NespressoLucas-Light.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Light.woff2") format("woff2"), url("fonts/NespressoLucas-Light.woff") format("woff"), url("fonts/NespressoLucas-Light.ttf") format("truetype"), url("fonts/NespressoLucas-Light.svg#NespressoLucas-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nespresso Lucas";
+  src: url("fonts/NespressoLucas-Regular.eot");
+  src: url("fonts/NespressoLucas-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Regular.woff2") format("woff2"), url("fonts/NespressoLucas-Regular.woff") format("woff"), url("fonts/NespressoLucas-Regular.ttf") format("truetype"), url("fonts/NespressoLucas-Regular.svg#NespressoLucas-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nespresso Lucas";
+  font-weight: 700;
+}
+
+a, p, button, label, input {
+  font-family: "Nespresso Lucas";
+  font-weight: normal;
+}
+
+.titulos {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 24px 0 32px;
+}
+.titulos.mix {
+  color: #475460;
+}
+.titulos.mix span {
+  font-weight: normal;
+}
+
+.header {
+  background-color: black;
+}
+.header nav {
+  width: auto;
+  max-width: 100vw;
+  padding: 8px 16px;
+  position: relative;
+}
+.header nav .topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav .topnav a.logo {
+  padding: 0;
+}
+.header nav .topnav a.logo img {
+  max-width: 120px;
+  height: auto;
+}
+.header nav .topnav .icon {
+  z-index: 10;
+}
+.header nav .topnav .icon img {
+  width: 24px;
+}
+.header nav .topnav .icon:focus {
+  outline: 1px solid white;
+}
+.header nav .topnav #menulinks {
+  width: 0;
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: width 0.5s;
+}
+.header nav .topnav #menulinks a {
+  color: white;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 16px;
+  text-align: left;
+  transition: 0.3s;
+}
+.header nav .topnav #menulinks a:hover, .header nav .topnav #menulinks a.active {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .header nav {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .header nav .topnav #menulinks {
+    width: 500px;
+    position: relative;
+    padding-top: 0;
+    background-color: inherit;
+    height: auto;
+    display: flex;
+    align-items: center;
+    top: 0;
+    justify-content: flex-end;
+  }
+  .header nav .topnav #menulinks a {
+    color: white;
+  }
+  .header nav .topnav #menulinks a:hover, .header nav .topnav #menulinks a.active {
+    color: black;
+  }
+  .header nav .topnav #menulinks a.closebtn {
+    display: none;
+  }
+  .header nav .topnav .icon {
+    display: none;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button, input[type=button] {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+button.modal, input[type=button].modal {
+  min-width: 182px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+button.modal span, input[type=button].modal span {
+  min-width: 24%;
+  border-bottom: 1px solid black;
+  margin-right: 6px;
+  margin-bottom: 2px;
+  height: 100%;
+}
+button.modal img, input[type=button].modal img {
+  margin-left: 6px;
+}
+button.btn, input[type=button].btn {
+  border: 1px solid #475460;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  background-color: #F1ECE6;
+  font-size: 20px;
+  padding: 8px 28px;
+}
+button.btn:hover, input[type=button].btn:hover {
+  background-color: #000;
+  color: white;
+}
+button.open-dialog, input[type=button].open-dialog {
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 32px;
+  background-size: contain;
+  background-position: center left;
+  background-repeat: no-repeat;
+  margin: 8px 0;
+}
+button.open-dialog.down, input[type=button].open-dialog.down {
+  background-image: url("../images/icon_download.svg");
+}
+button.open-dialog.speak, input[type=button].open-dialog.speak {
+  background-image: url("../images/icon_speaker.svg");
+}
+button.open-dialog:hover, input[type=button].open-dialog:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  padding: 32px 16px 64px;
+}
+form .campo {
+  display: flex;
+  flex-direction: column;
+}
+form .campo label {
+  color: #000;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+form .campo input, form .campo textarea {
+  border-color: transparent transparent #000 transparent;
+  background-color: transparent;
+  margin-bottom: 24px;
+}
+form button {
+  float: right;
+}
+
+#main-container {
+  background-color: #EDEDED;
+  position: relative;
+  font-size: 16px;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100%;
+  opacity: 0.6;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.4s;
+  z-index: 5;
+  backdrop-filter: blur(8px);
+  display: none;
+}
+
+.video {
+  background-image: url("../images/banner_hero.webp");
+  background-position: top;
+  background-size: 300%;
+  background-repeat: no-repeat;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.video h1 {
+  width: 94px;
+  background-color: #000;
+  color: #fff;
+  padding: 14px 9px 12px 14px;
+  margin: 0;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+}
+.video .box-text {
+  background-color: white;
+}
+.video .box-text .content {
+  padding: 26px 21px;
+}
+.video .box-text .content p {
+  margin: 0;
+}
+.video .box-text .content button {
+  margin-top: 12px;
+}
+
+.lienzo {
+  background-color: white;
+  margin: 0 1rem;
+  padding-top: 8px;
+}
+
+.ocw {
+  display: flex;
+  flex-direction: column;
+}
+.ocw .background {
+  height: 230px;
+  width: 100%;
+  background: #ffffff url("../images/banner_encuentros.webp") no-repeat center center;
+  background-size: cover;
+}
+.ocw .text {
+  background-color: #BF9A5D;
+}
+.ocw .text .content {
+  padding: 26px 14px;
+}
+.ocw .text .content h3 {
+  color: #000;
+  margin-top: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.ocw .text .content p {
+  color: #FFF;
+}
+.ocw .text .content p strong,
+.ocw .text .content p b {
+  font-weight: 600;
+}
+
+/* CARRUSEL SPEAKERS */
+.oradores {
+  max-width: 100vw;
+  width: 100%;
+  margin: auto;
+}
+.oradores .owl-item {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+}
+.oradores .owl-item .item {
+  opacity: 0.4;
+  transition: 0.4s ease all;
+  margin: 0 20px;
+  transform: scale(0.8);
+}
+.oradores .owl-item .item .pic {
+  position: relative;
+}
+.oradores .owl-item .item .inner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0.5rem;
+  color: #fff;
+}
+.oradores .owl-item .item .inner h3 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 32px;
+}
+.oradores .owl-item .item .inner button {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease border-color;
+  font-weight: 600;
+}
+.oradores .owl-item .item .inner button span.line {
+  border-bottom: 2px solid white;
+  display: inline-flex;
+  width: 56px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+.oradores .owl-item .item .inner button:hover {
+  border-color: #fff;
+}
+.oradores .owl-item.active {
+  z-index: 10;
+}
+.oradores .owl-item.active .item {
+  opacity: 1;
+  transform: scale(1);
+}
+.oradores .owl-controls .owl-dots .owl-dot.active span {
+  background-color: #BF9A5D;
+}
+.oradores .orador-text {
+  transition: all 250ms linear;
+  padding: 0 1rem;
+}
+.oradores .orador-text h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+#encuentros {
+  background-color: #F6F6F6;
+  padding-top: 16px;
+  /* Style the tab */
+}
+#encuentros .tab {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#encuentros .tab button {
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  color: #475460;
+  font-size: 16px;
+}
+#encuentros .tab button:hover {
+  background-color: #ddd;
+}
+#encuentros .tab button.active {
+  border-bottom-color: #475460;
+  color: #000;
+}
+#encuentros .tabcontent {
+  display: none;
+  animation: fadeEffect 1s;
+}
+#encuentros .tabcontent .grid .item-grid {
+  display: flex;
+  flex-direction: column;
+}
+#encuentros .tabcontent .grid .item-grid .iframe, #encuentros .tabcontent .grid .item-grid .picture {
+  height: 328px;
+  width: 100%;
+}
+#encuentros .tabcontent .grid .item-grid .text {
+  background-color: #BF9A5D;
+}
+#encuentros .tabcontent .grid .item-grid .text .content {
+  padding: 8px 16px 24px;
+  position: relative;
+}
+#encuentros .tabcontent .grid .item-grid .text .content .titulo {
+  display: flex;
+}
+#encuentros .tabcontent .grid .item-grid .text .content .titulo img {
+  margin-right: 16px;
+  min-width: 40px;
+}
+#encuentros .tabcontent .grid .item-grid .text .content .titulo h3 {
+  font-size: 20px;
+  font-weight: 600px;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+#encuentros .tabcontent .grid .item-grid .text .content .titulo h3.quote {
+  text-transform: inherit;
+}
+#encuentros .tabcontent .grid .item-grid .text .content p {
+  color: #FFF;
+  margin-top: 0;
+}
+#encuentros .tabcontent .grid .item-grid .text .content.cita::after {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 32px;
+  top: -30px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  border-bottom: 40px solid #BF9A5D;
+}
+#encuentros .tabcontent .grid .item-grid .picture {
+  position: relative;
+  overflow: hidden;
+}
+#encuentros .tabcontent .grid .item-grid .picture img {
+  position: absolute;
+  left: 50%;
+  margin: auto;
+  top: 50%;
+  transform: translatey(-50%) translateX(-50%) scale(1.1);
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#invitados #owl-inv .item {
+  padding: 16px;
+}
+#invitados #owl-inv .item .logo {
+  width: 56px;
+}
+#invitados #owl-inv .item h3 {
+  color: #FFF;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.1em;
+}
+#invitados #owl-inv .item .autor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+#invitados #owl-inv .item .autor .img {
+  width: 55px;
+  height: 55px;
+  margin-right: 14px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+#invitados #owl-inv .item .autor .name h4 {
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0;
+}
+#invitados #owl-inv .item .autor .name p {
+  margin: 0;
+  font-size: 12px;
+}
+#invitados #owl-inv .owl-item:nth-child(even) {
+  background-color: #BF9A5D;
+}
+#invitados #owl-inv .owl-item:nth-child(odd) .item h3 {
+  color: #000;
+}
+#invitados #owl-inv .owl-nav {
+  text-align: right;
+}
+#invitados #owl-inv .owl-nav div {
+  background-color: white;
+  border: none;
+  outline-color: #fff;
+  border-radius: 0;
+  padding: 6px 12px;
+  margin: 0;
+}
+
+#contact {
+  background-color: #000;
+}
+#contact .titulos {
+  color: #fff;
+  margin-top: 0;
+  padding-top: 32px;
+}
+#contact .form {
+  background-color: #F1ECE6;
+}
+#contact .form .background {
+  height: 243px;
+  width: 100%;
+  background: #000 url("../images/banner_contacto.webp") no-repeat center center;
+  background-size: cover;
+}
+
+.dialog-form#dialog-steps {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: #fff;
+  text-align: right;
+}
+.dialog-form#dialog-steps h4, .dialog-form#dialog-steps p {
+  margin: 0;
+}
+.dialog-form#dialog-steps h4.aviso, .dialog-form#dialog-steps p.aviso {
+  text-align: left;
+}
+.dialog-form#dialog-steps form {
+  margin-top: 8px;
+  background-color: white;
+  padding: 16px 16px 40px;
+  margin-top: 0;
+  width: 100%;
+}
+.dialog-form#dialog-steps form fieldset {
+  border: 0 none;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  max-width: 100%;
+}
+.dialog-form#dialog-steps form fieldset img {
+  margin: 24px 0;
+}
+.dialog-form#dialog-steps form fieldset:not(:first-of-type) {
+  display: none;
+}
+.dialog-form#dialog-steps form fieldset label {
+  text-align: left;
+}
+.dialog-form#dialog-steps form fieldset input[type=button], .dialog-form#dialog-steps form fieldset button {
+  margin-top: 24px;
+  float: none;
+}
+.dialog-form#dialog-steps .btn {
+  display: inline-block;
+  background-color: #000;
+  border-color: transparent;
+  text-transform: initial;
+  font-weight: normal;
+  color: white;
+  margin: 8px 4px;
+}
+.dialog-form#dialog-steps .btn.line {
+  background-color: white;
+  border-color: #000;
+  color: #000;
+}
+
+@media (max-width: 1000px) {
+  .oradores .item {
+    margin: 0;
+    transform: scale(0.9);
+  }
+}
+@media (min-width: 660px) {
+  .oradores {
+    width: 70vw;
+  }
+}
+@media (min-width: 768px) {
+  .video {
+    background-size: 200%;
+  }
+
+  #encuentros .tab {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  #encuentros .tabcontent .grid .item-grid {
+    flex-direction: row;
+    height: 320px;
+  }
+  #encuentros .tabcontent .grid .item-grid .picture, #encuentros .tabcontent .grid .item-grid .iframe, #encuentros .tabcontent .grid .item-grid .text {
+    height: 100%;
+  }
+  #encuentros .tabcontent .grid .item-grid .picture, #encuentros .tabcontent .grid .item-grid .text, #encuentros .tabcontent .grid .item-grid .iframe {
+    width: 50%;
+  }
+  #encuentros .tabcontent .grid .item-grid .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content.cita::after {
+    right: -32px;
+    transform: rotate(90deg) translateY(-40%);
+    top: 40%;
+  }
+  #encuentros .tabcontent .grid .item-grid:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1024px) {
+  .oradores {
+    width: 685px;
+  }
+
+  .video {
+    height: 620px;
+    background-size: cover;
+    position: relative;
+  }
+  .video .absolute {
+    position: absolute;
+    width: 480px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 96px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .ocw {
+    flex-direction: row;
+    height: 320px;
+  }
+  .ocw .background, .ocw .text {
+    width: 50%;
+    height: 100%;
+  }
+
+  #contact .form {
+    display: flex;
+    height: 560px;
+  }
+  #contact .form .background, #contact .form .formulario {
+    width: 50%;
+  }
+  #contact .form .background {
+    height: 100%;
+  }
+  #contact .form .formulario {
+    display: flex;
+    align-items: center;
+  }
+  #contact .form .formulario form {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .titulos {
+    font-size: 42px;
+    padding: 24px;
+  }
+
+  #overlay {
+    display: none;
+  }
+
+  .video .absolute {
+    width: 672px;
+  }
+  .video .absolute h1 {
+    font-size: 32px;
+    line-height: 24px;
+    width: 183px;
+  }
+  .video .absolute .box-text {
+    width: 482px;
+  }
+  .video .absolute .box-text .content p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .lienzo {
+    max-width: 1178px;
+    margin: 0 auto;
+  }
+
+  .ocw {
+    height: 436px;
+  }
+  .ocw .text .content {
+    padding: 36px;
+  }
+  .ocw .text .content h3 {
+    font-size: 32px;
+  }
+  .ocw .text .content p {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .oradores .orador-text {
+    margin-bottom: 88px;
+  }
+  .oradores .orador-text h2 {
+    font-size: 30px;
+  }
+  .oradores .orador-text p {
+    font-size: 20;
+    text-align: center;
+  }
+
+  #encuentros .tabcontent .grid .item-grid {
+    height: 427px;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content {
+    padding: 48px;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content .titulo {
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content .titulo h3 {
+    font-size: 36px;
+    font-weight: 700;
+    width: 70%;
+    margin: 0;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content p, #encuentros .tabcontent .grid .item-grid .text .content button {
+    font-size: 20px;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content.cita {
+    padding: 32px;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content.cita .titulo {
+    align-items: flex-start;
+    margin-bottom: 36px;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content.cita .titulo h3.quote {
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 32px;
+  }
+  #encuentros .tabcontent .grid .item-grid .text .content.cita button {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  #invitados #owl-inv .item {
+    padding: 32px 80px 72px 56px;
+  }
+  #invitados #owl-inv .item .logo {
+    width: 96px;
+  }
+  #invitados #owl-inv .item h3 {
+    font-size: 32px;
+    line-height: 97%;
+    font-weight: 600;
+  }
+  #invitados #owl-inv .item .autor .img {
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+  }
+  #invitados #owl-inv .item .autor .name h4 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+  #invitados #owl-inv .item .autor .name p {
+    max-width: 280px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #invitados #owl-inv .owl-controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  #contact .form .formulario form {
+    padding: 97px 70px 63px 78px;
+  }
+
+  /** MODAL **/
+  .ui-dialog .ui-dialog-titlebar {
+    height: 156px;
+  }
+
+  .dialog-form#dialog-steps h4, .dialog-form#dialog-steps p {
+    font-size: 20px;
+  }
+  .dialog-form#dialog-steps form fieldset:nth-child(2) {
+    padding: 97px 70px 63px 78px;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .video {
+    background-image: url("../images/banner_hero.jpg");
+  }
+  .video .absolute h1 {
+    width: 140px;
+  }
+
+  .ocw .background {
+    background: #ffffff url("../images/banner_encuentros.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  #encuentros .tabcontent .grid .item-grid .text .content {
+    width: 560px;
+  }
+
+  #contact .form .background {
+    background: #000 url("../images/banner_contacto.jpg") no-repeat center center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

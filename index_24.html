@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
+  <title></title>
+  <link rel="stylesheet" href="./css/owl-carousel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/jquery-ui.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/animate.css">
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/owl-carousel.js"></script>
+  <script src="./js/angularjs.js"></script>
+  <script src="./js/app.js"></script>
+</head>
+
+<body>
+
+  <section class="video">
+    <div class="absolute">
+      <h1 aria-label="open coffee work">OPEN COFFEE WORK
+      </h1>
+      <div class="box-text">
+
+        <div class="content">
+
+          <p>Desde <strong>Nespresso Professional</strong> diseñamos Open Coffee Work, un espacio de reflexión para
+            disertar y debatir acerca del futuro del trabajo.
+
+          </p>
+          <p>Junto a una comunidad de expertos y líderes de HR y del Management de empresas, buscamos compartir ideas,
+            intercambiar prácticas y poner en común experiencias para co-crear entre todos una nueva visión de los
+            espacios de trabajo del futuro.</p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div ng-app="FowApp" id="main-container">
+    <div class="header">
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a href="#" class="logo"><img src="./images/nespresso_logo.png" alt=""></a>
+          <span id="menulinks">
+
+            <a href="#ocw" aria-label="Sobre FOW">SOBRE OCW</a>
+            <a href="#speakers" aria-label="Oradores">SPEAKERS</a>
+            <a href="#encuentros" aria-label="Encuentro">ENCUENTROS</a>
+            <a href="#contact" aria-label="Contacto">CONTACTO</a>
+          </span>
+
+          <button id="click" class="icon " onclick="openNav()">
+            <img src="images/menu.svg" alt="">
+          </button>
+
+        </div>
+      </nav>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="lienzo">
+      <h2 class="titulos mix" aria-label="Los espacios de trabajo están cambiando">
+        <center><span>Los espacios de trabajo</span> están cambiando</center>
+        <div id="altura">
+
+        </div>
+      </h2>
+      <section id="ocw" class="ocw">
+        <div class="background"></div>
+        <div class="text">
+          <div class="content">
+            <h3 aria-label="Encuentros colaborativos">Encuentros colaborativos</h3>
+            <p>Desde Nespresso Professional realizamos un ciclo de encuentros en formato workshop virtual para generar
+              un espacio colaborativo de intercambio y reflexión. Junto con <strong> Alejandro Melamed</strong>,
+              ambassador de <strong> Open Coffee Work</strong>, y una comunidad de expertos, abordamos una variedad de
+              temas acerca del futuro de los espacios de trabajo.
+            </p>
+            <p><b>¿Qué acciones adoptan las empresas ante el escenario actual? ¿Cómo se preparan para los próximos
+                cambios?</b></p>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="speakers" class="oradores" ng-controller="oradoresCtrlr">
+        <h2 class="titulos" aria-label="Speakers">
+          <center>Speakers</center>
+        </h2>
+        <div class="owl-carousel owl-oradores owl-theme">
+          <div ng-repeat="orador in oradores" class="item" data-index={{orador.id}}>
+            <div class="pic">
+              <img src="./images/{{orador.foto}}" alt="">
+              <div class="inner">
+                <h3>{{orador.id}}</h3>
+                <button class="next"><span class="line"></span> > </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orador-text">
+          <h2>
+            <center> {{oradorActivo.nombre}} | {{oradorActivo.rol}}</center>
+          </h2>
+          <p>{{oradorActivo.descripcion}}</p>
+        </div>
+      </section>
+
+      <section id="encuentros">
+        <h2 class="titulos" aria-label="Encuentros">
+          <center>Encuentros</center>
+        </h2>
+        <div class="tab">
+          <button class="tablinks active" onclick="openCity(event, 'inteligencia')"
+            aria-label="Inteligencia colaborativa">Inteligencia colaborativa</button>
+          <!-- <button class="tablinks" onclick="openCity(event, 'future')">Future Managmen</button>
+          <button class="tablinks" onclick="openCity(event, 'skill')">Reskilling & Upskillin</button> -->
+        </div>
+
+        <!-- Tab content -->
+        <div id="inteligencia" class="tabcontent">
+          <div class="grid">
+            <div class="item-grid">
+              <div class="picture">
+               <img src="./images/encuentros_inteligencia.jpg" alt="">
+              </div>
+              <div class="text">
+                <div class="content">
+                  <div class="titulo">
+                    <img src="./images/icon_talk.svg" alt="">
+                    <h3 aria-label="Inteligencia Colaborativa">Inteligencia Colaborativa</h3>
+                  </div>
+
+                  <p>Los <strong>avances exponenciales de las tecnologías</strong> plantean nuevos desafíos para las
+                    estructuras mentales y organizacionales de los modelos tradicionales de las empresas.</p>
+                  <p> <strong>¿Cómo potenciar el poder de las capacidades humanas en este nuevo auge digital?</strong>
+                  </p>
+
+                  
+                </div>
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        
+      </section>
+
+      <section id="contact">
+        <h2 class="titulos" aria-label="Contacto">
+          <center>Contacto</center>
+        </h2>
+        <div class="form">
+          <div class="background"></div>
+          <div class="formulario">
+            <form id="footerContact" action="">
+              <div class="campo">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="campo">
+                <label for="lname">Apellido</label>
+                <input type="text" id="lname" name="lname" required>
+              </div>
+              <div class="campo">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" required>
+              </div>
+              <div class="campo">
+                <label for="comments">Comentarios</label>
+                <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
+              </div>
+              <button class="btn" type="submit" value="Enviar">Enviar</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+
+
+  </div>
+
+  <div class="dialog-form" id="dialog-steps">
+    <!-- multistep form -->
+    <form id="msform">
+      <!-- progressbar -->
+
+      <!-- fieldsets -->
+      <fieldset>
+        <center>
+          <p> ¿Te gustaría acceder al material completo?</p>
+        </center>
+        <h4>
+          <center> ¡Dejanos tus datos y te lo enviamos!</center>
+        </h4>
+        <img style="max-width:100%" src="http://files.encendercomunicacion.com/nespresso/infografia.jpg" alt="">
+        <input type="button" name="close" class="close btn line" value="Cerrar" />
+        <input type="button" name="next" class="next btn" value="Continuar" />
+
+
+      </fieldset>
+
+      <fieldset>
+        <div class="campo">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="campo">
+          <label for="lname">Apellido</label>
+          <input type="text" id="lname" name="lname" required>
+        </div>
+        <div class="campo">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa" required>
+        </div>
+        <div class="campo">
+          <label for="comments">Comentarios</label>
+          <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
+        </div>
+        <h4 class="aviso">Si ya completaste el formulario con tus datos solicitando el material, no hace falta volverlo
+          a hacer.</h4>
+        <input type="button" name="close" class="previous btn line" value="Atrás" />
+        <button type="submit" name="submit" class="submit btn" value="Cerrar">Enviar</button>
+      </fieldset>
+      <fieldset>
+
+
+
+
+      </fieldset>
+    </form>
+
+  </div>
+
+  <!-- <script src="./js/jquery-ui.js"></script> -->
+  <script type="text/javascript" src="./js/events.js"></script>
+
+  <script>
+    "use strict";
+
+    $(document).ready(function () {
+      var slideOradores = $('.owl-oradores');
+      setTimeout(function () {
+        slideOradores.owlCarousel({
+          stagePadding: 40,
+          loop: true,
+          margin: -96,
+          nav: false,
+          items: 1,
+          lazyLoad: true,
+          dots: true,
+          responsive: {
+            600: {
+              items: 1,
+              stagePadding: 80,
+              margin: -72
+            },
+            768: {
+              stagePadding: 96,
+              margin: -88
+            },
+            1000: {
+              items: 1,
+              stagePadding: 132,
+              margin: -96
+            }
+          }
+        });
+        $('button.next').click(function () {
+          slideOradores.trigger('next.owl.carousel');
+        });
+      }, 500);
+      $('button').removeClass('ui-button ui-corner-all ui-widget');
+      $('#msform').submit(function () {
+        console.log('formulario terminado');
+      });
+    });
+  </script>
+</body>
+
+</html>
