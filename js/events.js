@@ -44,6 +44,7 @@ function closeNav() {
 $(overlay).click(function () {
   closeNav();
 });
+
 var tabcontent = document.getElementsByClassName("tabcontent");
 tabcontent[0].style.display = "block";
 
@@ -91,16 +92,24 @@ $(document).ready(function () {
   var dialog_steps = $("#dialog-steps").dialog({
     autoOpen: false,
     minHeight: 560,
-    minWidth: 350,
-    width: 560,
+    width: 'auto',
+    maxWidth: 600,
     draggable: false,
     modal: true,
+    fluid: true,
+    resizable: false,
+    showTitleBar:false,
     close: closeModal,
+    create: function( event, ui ) {
+      // Set maxWidth
+      $(this).css("maxWidth", "660px");
+    },
     position: {
       my: 'center',
       at: 'center'
     }
   });
+
   var botonModal = $('.open-dialog');
   $(botonModal).on("click", function () {
     dialog_steps.dialog("open");
@@ -129,6 +138,11 @@ $(document).ready(function () {
       'position': 'relative',
       'display': 'block'
     });
+  }
+
+  function thankYou() {
+    // window.location.href = "thankyou.html";
+    window.open('thankyou.html')
   }
   /**********/
 
@@ -214,9 +228,6 @@ $(document).ready(function () {
       //this comes from the custom easing plugin
       easing: 'easeInOutBack'
     });
-  }); // $(".submit").click(function () {
-  //     restartDialog();
-  //     $('#dialog-form').dialog('close')
-  //     return false;
-  // })
+  });
+
 });
