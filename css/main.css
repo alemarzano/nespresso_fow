@@ -207,14 +207,14 @@ body {
 }
 
 button,
-input[type=button] {
+input[type=button], input[type=submit] {
   border: none;
   background: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 button.modal,
-input[type=button].modal {
+input[type=button].modal, input[type=submit].modal {
   min-width: 182px;
   font-weight: 600;
   display: flex;
@@ -222,7 +222,7 @@ input[type=button].modal {
   padding: 0;
 }
 button.modal span,
-input[type=button].modal span {
+input[type=button].modal span, input[type=submit].modal span {
   min-width: 24%;
   border-bottom: 1px solid black;
   margin-right: 6px;
@@ -230,11 +230,11 @@ input[type=button].modal span {
   height: 100%;
 }
 button.modal img,
-input[type=button].modal img {
+input[type=button].modal img, input[type=submit].modal img {
   margin-left: 6px;
 }
 button.btn,
-input[type=button].btn {
+input[type=button].btn, input[type=submit].btn {
   border: 1px solid #475460;
   text-transform: uppercase;
   font-weight: 700;
@@ -244,12 +244,12 @@ input[type=button].btn {
   padding: 8px 28px;
 }
 button.btn:hover,
-input[type=button].btn:hover {
+input[type=button].btn:hover, input[type=submit].btn:hover {
   background-color: #000;
   color: white;
 }
 button.open-dialog,
-input[type=button].open-dialog {
+input[type=button].open-dialog, input[type=submit].open-dialog {
   text-transform: uppercase;
   color: white;
   font-size: 16px;
@@ -261,15 +261,15 @@ input[type=button].open-dialog {
   margin: 8px 0;
 }
 button.open-dialog.down,
-input[type=button].open-dialog.down {
+input[type=button].open-dialog.down, input[type=submit].open-dialog.down {
   background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13569795358750/icon-download.svg?");
 }
 button.open-dialog.speak,
-input[type=button].open-dialog.speak {
+input[type=button].open-dialog.speak, input[type=submit].open-dialog.speak {
   background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13569795653662/icon-speaker.svg?");
 }
 button.open-dialog:hover,
-input[type=button].open-dialog:hover {
+input[type=button].open-dialog:hover, input[type=submit].open-dialog:hover {
   transform: scale(1.1);
 }
 
