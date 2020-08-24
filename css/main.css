@@ -1,107 +1,44 @@
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-SemiBdItalic.eot");
-  src: url("fonts/NespressoLucas-SemiBdItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-SemiBdItalic.woff2") format("woff2"), url("fonts/NespressoLucas-SemiBdItalic.woff") format("woff"), url("fonts/NespressoLucas-SemiBdItalic.ttf") format("truetype"), url("fonts/NespressoLucas-SemiBdItalic.svg#NespressoLucas-SemiBdItalic") format("svg");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-MedItalic.eot");
-  src: url("fonts/NespressoLucas-MedItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-MedItalic.woff2") format("woff2"), url("fonts/NespressoLucas-MedItalic.woff") format("woff"), url("fonts/NespressoLucas-MedItalic.ttf") format("truetype"), url("fonts/NespressoLucas-MedItalic.svg#NespressoLucas-MedItalic") format("svg");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-Med.eot");
-  src: url("fonts/NespressoLucas-Med.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Med.woff2") format("woff2"), url("fonts/NespressoLucas-Med.woff") format("woff"), url("fonts/NespressoLucas-Med.ttf") format("truetype"), url("fonts/NespressoLucas-Med.svg#NespressoLucas-Med") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-Italic.eot");
-  src: url("fonts/NespressoLucas-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Italic.woff2") format("woff2"), url("fonts/NespressoLucas-Italic.woff") format("woff"), url("fonts/NespressoLucas-Italic.ttf") format("truetype"), url("fonts/NespressoLucas-Italic.svg#NespressoLucas-Italic") format("svg");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-LightItalic.eot");
-  src: url("fonts/NespressoLucas-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-LightItalic.woff2") format("woff2"), url("fonts/NespressoLucas-LightItalic.woff") format("woff"), url("fonts/NespressoLucas-LightItalic.ttf") format("truetype"), url("fonts/NespressoLucas-LightItalic.svg#NespressoLucas-LightItalic") format("svg");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-BoldItalic.eot");
-  src: url("fonts/NespressoLucas-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-BoldItalic.woff2") format("woff2"), url("fonts/NespressoLucas-BoldItalic.woff") format("woff"), url("fonts/NespressoLucas-BoldItalic.ttf") format("truetype"), url("fonts/NespressoLucas-BoldItalic.svg#NespressoLucas-BoldItalic") format("svg");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-XtraBd.eot");
-  src: url("fonts/NespressoLucas-XtraBd.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-XtraBd.woff2") format("woff2"), url("fonts/NespressoLucas-XtraBd.woff") format("woff"), url("fonts/NespressoLucas-XtraBd.ttf") format("truetype"), url("fonts/NespressoLucas-XtraBd.svg#NespressoLucas-XtraBd") format("svg");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-Bold.eot");
-  src: url("fonts/NespressoLucas-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Bold.woff2") format("woff2"), url("fonts/NespressoLucas-Bold.woff") format("woff"), url("fonts/NespressoLucas-Bold.ttf") format("truetype"), url("fonts/NespressoLucas-Bold.svg#NespressoLucas-Bold") format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-SemiBd.eot");
-  src: url("fonts/NespressoLucas-SemiBd.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-SemiBd.woff2") format("woff2"), url("fonts/NespressoLucas-SemiBd.woff") format("woff"), url("fonts/NespressoLucas-SemiBd.ttf") format("truetype"), url("fonts/NespressoLucas-SemiBd.svg#NespressoLucas-SemiBd") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-XtraBdItalic.eot");
-  src: url("fonts/NespressoLucas-XtraBdItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-XtraBdItalic.woff2") format("woff2"), url("fonts/NespressoLucas-XtraBdItalic.woff") format("woff"), url("fonts/NespressoLucas-XtraBdItalic.ttf") format("truetype"), url("fonts/NespressoLucas-XtraBdItalic.svg#NespressoLucas-XtraBdItalic") format("svg");
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-Light.eot");
-  src: url("fonts/NespressoLucas-Light.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Light.woff2") format("woff2"), url("fonts/NespressoLucas-Light.woff") format("woff"), url("fonts/NespressoLucas-Light.ttf") format("truetype"), url("fonts/NespressoLucas-Light.svg#NespressoLucas-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nespresso Lucas";
-  src: url("fonts/NespressoLucas-Regular.eot");
-  src: url("fonts/NespressoLucas-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/NespressoLucas-Regular.woff2") format("woff2"), url("fonts/NespressoLucas-Regular.woff") format("woff"), url("fonts/NespressoLucas-Regular.ttf") format("truetype"), url("fonts/NespressoLucas-Regular.svg#NespressoLucas-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nespresso Lucas";
   font-weight: 700;
+  color: black;
+  margin-top: 0;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18.72px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13.28px;
+}
+
+h6 {
+  font-size: 10.72px;
 }
 
 a, p, button, label, input {
   font-family: "Nespresso Lucas";
   font-weight: normal;
+  font-size: 17px;
+  line-height: 1.2em;
+}
+
+p {
+  margin-bottom: 12px;
 }
 
 .titulos {
@@ -207,14 +144,16 @@ body {
 }
 
 button,
-input[type=button], input[type=submit] {
+input[type=button],
+input[type=submit] {
   border: none;
   background: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 button.modal,
-input[type=button].modal, input[type=submit].modal {
+input[type=button].modal,
+input[type=submit].modal {
   min-width: 182px;
   font-weight: 600;
   display: flex;
@@ -222,7 +161,8 @@ input[type=button].modal, input[type=submit].modal {
   padding: 0;
 }
 button.modal span,
-input[type=button].modal span, input[type=submit].modal span {
+input[type=button].modal span,
+input[type=submit].modal span {
   min-width: 24%;
   border-bottom: 1px solid black;
   margin-right: 6px;
@@ -230,11 +170,13 @@ input[type=button].modal span, input[type=submit].modal span {
   height: 100%;
 }
 button.modal img,
-input[type=button].modal img, input[type=submit].modal img {
+input[type=button].modal img,
+input[type=submit].modal img {
   margin-left: 6px;
 }
 button.btn,
-input[type=button].btn, input[type=submit].btn {
+input[type=button].btn,
+input[type=submit].btn {
   border: 1px solid #475460;
   text-transform: uppercase;
   font-weight: 700;
@@ -244,12 +186,14 @@ input[type=button].btn, input[type=submit].btn {
   padding: 8px 28px;
 }
 button.btn:hover,
-input[type=button].btn:hover, input[type=submit].btn:hover {
+input[type=button].btn:hover,
+input[type=submit].btn:hover {
   background-color: #000;
   color: white;
 }
 button.open-dialog,
-input[type=button].open-dialog, input[type=submit].open-dialog {
+input[type=button].open-dialog,
+input[type=submit].open-dialog {
   text-transform: uppercase;
   color: white;
   font-size: 16px;
@@ -261,15 +205,18 @@ input[type=button].open-dialog, input[type=submit].open-dialog {
   margin: 8px 0;
 }
 button.open-dialog.down,
-input[type=button].open-dialog.down, input[type=submit].open-dialog.down {
+input[type=button].open-dialog.down,
+input[type=submit].open-dialog.down {
   background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13569795358750/icon-download.svg?");
 }
 button.open-dialog.speak,
-input[type=button].open-dialog.speak, input[type=submit].open-dialog.speak {
+input[type=button].open-dialog.speak,
+input[type=submit].open-dialog.speak {
   background-image: url("https://www.nespresso.com/ecom/medias/sys_master/public/13569795653662/icon-speaker.svg?");
 }
 button.open-dialog:hover,
-input[type=button].open-dialog:hover, input[type=submit].open-dialog:hover {
+input[type=button].open-dialog:hover,
+input[type=submit].open-dialog:hover {
   transform: scale(1.1);
 }
 
@@ -319,6 +266,7 @@ form button {
   font-weight: 700;
   line-height: 14px;
   letter-spacing: -0.015em;
+  font-size: 19px;
 }
 .video .box-text {
   background-color: white;
@@ -329,6 +277,8 @@ form button {
 .video .box-text .content p {
   margin: 0 0 4px 0;
   color: black;
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 .video .box-text .content button {
   margin-top: 12px;
@@ -370,6 +320,8 @@ form button {
 }
 #ocw-container .ocw .text {
   background-color: #BF9A5D;
+  display: flex;
+  align-items: center;
 }
 #ocw-container .ocw .text .content {
   padding: 26px 14px;
@@ -380,7 +332,8 @@ form button {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 0;
 }
 #ocw-container .ocw .text .content p {
   color: #FFF;
@@ -424,6 +377,8 @@ form button {
   font-weight: 600;
   margin: 0;
   font-size: 32px;
+  padding-bottom: 0;
+  color: #fff;
 }
 #ocw-container .oradores .owl-item .item .inner button {
   color: white;
@@ -457,6 +412,7 @@ form button {
   transition: all 250ms linear;
   padding: 0 1rem;
   color: #000;
+  padding-bottom: 24px;
 }
 #ocw-container .oradores .orador-text h2 {
   font-weight: 600;
@@ -473,6 +429,7 @@ form button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 16px;
 }
 #ocw-container #encuentros .tab button {
   background-color: inherit;
@@ -511,11 +468,13 @@ form button {
   background-color: #BF9A5D;
 }
 #ocw-container #encuentros .tabcontent .grid .item-grid .text .content {
-  padding: 8px 16px 24px;
+  padding: 24px 16px;
   position: relative;
 }
 #ocw-container #encuentros .tabcontent .grid .item-grid .text .content .titulo {
   display: flex;
+  margin-bottom: 16px;
+  align-items: center;
 }
 #ocw-container #encuentros .tabcontent .grid .item-grid .text .content .titulo img {
   margin-right: 16px;
@@ -523,9 +482,8 @@ form button {
 }
 #ocw-container #encuentros .tabcontent .grid .item-grid .text .content .titulo h3 {
   font-size: 20px;
-  font-weight: 600px;
+  font-weight: 600;
   text-transform: uppercase;
-  margin-top: 16px 0 20px;
   color: #000;
 }
 #ocw-container #encuentros .tabcontent .grid .item-grid .text .content .titulo h3.quote {
@@ -637,6 +595,10 @@ form button {
   width: 100%;
   background: #000 url("https://www.nespresso.com/ecom/medias/sys_master/public/13569800470558/banner-contacto.jpg?") no-repeat center center;
   background-size: cover;
+}
+#ocw-container #contact .form h4 {
+  font-weight: 600;
+  padding: 16px 0;
 }
 
 .dialog-form#dialog-steps {
@@ -782,7 +744,7 @@ form button {
   }
   #ocw-container #contact .form {
     display: flex;
-    height: 560px;
+    height: 640px;
   }
   #ocw-container #contact .form .background,
 #ocw-container #contact .form .formulario {
@@ -797,6 +759,21 @@ form button {
   }
   #ocw-container #contact .form .formulario form {
     width: 100%;
+    padding: 0 40px;
+  }
+
+  #ocw-container #encuentros .tabcontent .grid .item-grid .text .content, #ocw-container .ocw .text .content {
+    padding: 24px 32px;
+  }
+
+  #ocw-container #encuentros .tabcontent .grid .item-grid .text .content .titulo {
+    max-width: 65%;
+  }
+  #ocw-container #encuentros .tabcontent .grid .item-grid .text .content .titulo img {
+    width: 56px;
+  }
+  #ocw-container #encuentros .tabcontent .grid .item-grid .text .content .titulo h3 {
+    line-height: 1em;
   }
 }
 @media (min-width: 1200px) {
@@ -920,7 +897,7 @@ form button {
     right: 0;
   }
   #ocw-container #contact .form .formulario form {
-    padding: 97px 70px 63px 78px;
+    padding: 0 80px;
   }
 
   /** MODAL **/
@@ -933,24 +910,16 @@ form button {
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .video {
-    background-image: url("../images/banner_hero.jpg");
-  }
   .video .absolute h1 {
     width: 140px;
   }
 
   .ocw .background {
-    background: #ffffff url("../images/banner_encuentros.jpg") no-repeat center center;
     background-size: cover;
   }
 
   #encuentros .tabcontent .grid .item-grid .text .content {
     width: 560px;
-  }
-
-  #contact .form .background {
-    background: #000 url("../images/banner_contacto.jpg") no-repeat center center;
   }
 }
 
