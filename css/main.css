@@ -521,6 +521,7 @@ form button {
   font-weight: 600;
   text-transform: uppercase;
   color: #000;
+  line-height: 1em;
 }
 #ocw-container #encuentros .tabcontent .grid .item-grid .text .content .titulo h3.quote {
   text-transform: inherit;
@@ -567,6 +568,7 @@ form button {
 }
 #ocw-container #invitados #owl-inv .item .logo {
   width: 56px;
+  margin-bottom: 32px;
 }
 #ocw-container #invitados #owl-inv .item h3 {
   color: #FFF;
@@ -591,8 +593,8 @@ form button {
 }
 #ocw-container #invitados #owl-inv .item .autor .name h4 {
   font-weight: 600;
-  font-size: 12px;
-  margin: 0;
+  font-size: 14px;
+  margin-bottom: 4px;
 }
 #ocw-container #invitados #owl-inv .item .autor .name p {
   margin: 0;
@@ -651,6 +653,7 @@ form button {
 }
 .dialog-form#dialog-steps h4.aviso, .dialog-form#dialog-steps p.aviso {
   text-align: left;
+  font-size: 18px;
 }
 .dialog-form#dialog-steps form {
   margin-top: 8px;
@@ -907,7 +910,6 @@ form button {
   }
   #ocw-container #invitados #owl-inv .item .logo {
     width: 96px;
-    margin-bottom: 32px;
   }
   #ocw-container #invitados #owl-inv .item h3 {
     font-size: 32px;
