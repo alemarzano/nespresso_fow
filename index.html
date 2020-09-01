@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <title></title>
-  <link rel="stylesheet" href="./css/owl-carousel.css">
+  <link rel="stylesheet"
+    href="https://www.nespresso.com/ecom/medias/sys_master/public/13569933705246/owl-carousel.css?">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/jquery-ui.css">
+  <link rel="stylesheet" href="https://www.nespresso.com/ecom/medias/sys_master/public/13569793359902/jquery-ui.css?">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="https://www.nespresso.com/ecom/medias/sys_master/public/13569793753118/animate.css?">
 
-  <script src="./js/jquery.js"></script>
-  <script src="./js/owl-carousel.js"></script>
-  <script src="./js/angularjs.js"></script>
+  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13569947664414/jquery.js"></script>
+  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13569947926558/owl-carousel.js"></script>
+  <script src="./js/angularjs.js"></script>>
   <script src="./js/app.js"></script>
 </head>
 
@@ -37,20 +38,19 @@
           <p>Junto a una comunidad de expertos y líderes de HR y del Management de empresas, buscamos compartir ideas,
             intercambiar prácticas y poner en común experiencias para co-crear entre todos una nueva visión de los
             espacios de trabajo del futuro.</p>
-
-          <button aria-label="ver video" class="modal"><span></span>VER VIDEO <img src="./images/play.svg"
-              alt="play video"> </button>
         </div>
       </div>
     </div>
 
   </section>
 
-  <div ng-app="FowApp" id="main-container">
+  <div ng-app="FowApp" id="ocw-container">
     <div class="header">
       <nav>
         <div class="topnav" id="myTopnav">
-          <a href="#" class="logo"><img src="./images/nespresso_logo.png" alt=""></a>
+          <a href="#" class="logo"><img
+              src="https://www.nespresso.com/ecom/medias/sys_master/public/13569952022558/nespresso-logo.png?"
+              alt=""></a>
           <span id="menulinks">
 
             <a href="#ocw" aria-label="Sobre FOW">SOBRE OCW</a>
@@ -60,7 +60,7 @@
           </span>
 
           <button id="click" class="icon " onclick="openNav()">
-            <img src="images/menu.svg" alt="">
+            <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13569944748062/menu.svg?" alt="">
           </button>
 
         </div>
@@ -99,7 +99,7 @@
         <div class="owl-carousel owl-oradores owl-theme">
           <div ng-repeat="orador in oradores" class="item" data-index={{orador.id}}>
             <div class="pic">
-              <img src="./images/{{orador.foto}}" alt="">
+              <img src="{{orador.foto}}" alt="">
               <div class="inner">
                 <h3>{{orador.id}}</h3>
                 <button class="next"><span class="line"></span> > </button>
@@ -115,57 +115,58 @@
         </div>
       </section>
 
-      <section id="encuentros">
+      <section id="encuentros" ng-controller="encuentrosCtrlr">
         <h2 class="titulos" aria-label="Encuentros">
           <center>Encuentros</center>
         </h2>
         <div class="tab">
-          <button class="tablinks active" onclick="openCity(event, 'inteligencia')"
+          <button class="tablinks active" onclick="openTab(event, 'inteligencia')"
             aria-label="Inteligencia colaborativa">Inteligencia colaborativa</button>
-          <button class="tablinks" onclick="openCity(event, 'future')">Future Managmen</button>
-          <button class="tablinks" onclick="openCity(event, 'skill')">Reskilling & Upskillin</button>
+          <!-- <button class="tablinks" onclick="openCity(event, 'future')">Future Managmen</button>
+        <button class="tablinks" onclick="openCity(event, 'skill')">Reskilling & Upskillin</button> -->
+
         </div>
 
-        <!-- Tab content -->
-        <div id="inteligencia" class="tabcontent">
+
+        <div id='inteligencia' class="tabcontent active">
           <div class="grid">
             <div class="item-grid">
               <div class="iframe">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/31tDJ-_LmFA" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://youtube.com/embed/WPRvsASEmkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="text">
                 <div class="content">
                   <div class="titulo">
-                    <img src="./images/icon_talk.svg" alt="">
+                    <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13569959854110/icon-talk.svg"
+                      alt="">
                     <h3 aria-label="Inteligencia Colaborativa">Inteligencia Colaborativa</h3>
                   </div>
+                  <p>Los <strong>avances exponenciales de las tecnologías</strong> plantean nuevos desafíos para las estructuras mentales y organizacionales de los modelos tradicionales de las empresas.</p> <p> <strong>¿Cómo potenciar el poder de las capacidades humanas en este nuevo auge digital?</strong> </p>
 
-                  <p>Los <strong>avances exponenciales de las tecnologías</strong> plantean nuevos desafíos para las
-                    estructuras mentales y organizacionales de los modelos tradicionales de las empresas.</p>
-                  <p> <strong>¿Cómo potenciar el poder de las capacidades humanas en este nuevo auge digital?</strong>
-                  </p>
-
-                  <button class="icon down open-dialog" aria-label="Ver infografía">Ver infografía</button>
+                  <button data-evento="inteligencia" data-content="info" class="down open-dialog"
+                    aria-label="Ver infografía">Ver infografía</button>
                 </div>
 
               </div>
             </div>
             <div class="item-grid">
               <div class="picture">
-                <img src="./images/encuentros_manes.jpg" alt="">
+                <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13570075361310/encuentros-manes.jpg?" alt="">
               </div>
               <div class="text">
                 <div class="content cita">
                   <div class="titulo">
-                    <img src="./images/icon_cup.svg" alt="">
-                    <h3 aria-label="Inteligencia Colaborativa" class="quote">“El café cumple un rol transversal en la
-                      rutina de trabajo de las personas” </h3>
+                    <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13569948352542/icon-cup.svg?"
+                      alt="">
+                    <h3  class="quote">"Ser inteligente tiene que ver con tener flexibilidad para mirar un problema, ver una posibilidad nueva, una salida que no fue pensada."</h3>
                   </div>
-                  <button class="icon speak open-dialog" aria-label="Escuchá el Podcast">Escuchá el Podcast</button>
-                  <button data-content="paper" class="icon down open-dialog" aria-label="Descargá el Paper">Descargá el
-                    Paper</button>
+
+                  <button data-evento="inteligencia" data-content="podcast" class="speak open-dialog"
+                    aria-label="Escuchá el Podcast">Escuchá el Podcast</button>
+                  <!-- 
+                  <button data-evento="inteligencia" data-content="paper" class="down open-dialog"
+                    aria-label="Descargá el Paper">Descargá el
+                    Paper</button> -->
                 </div>
               </div>
 
@@ -173,25 +174,125 @@
           </div>
         </div>
 
-        <div id="future" class="tabcontent">
-          <div class="grid">
-            <div class="item">
-              <div class="iframe"></div>
-              <div class="content-text"></div>
-            </div>
-          </div>
+        <div class="dialog-form" id="dialog-steps">
+          <!-- multistep form -->
+          <form action="https://www.nespresso.com/ebm/index.php" method="POST" id="form2">
+            <input type="hidden" name="to[]" value="promosecommerce@nespresso.com" />
+            <input type="hidden" name="market" value="AR" />
+            <input type="hidden" name="campaign" value="Open Coffee Work" />
+            <!-- progressbar -->
+
+            <!-- fieldsets -->
+            <fieldset>
+              <center>
+                <p> ¿Te gustaría acceder al material completo?</p>
+              </center>
+              <h4>
+                <center> ¡Dejanos tus datos y te lo enviamos!</center>
+              </h4>
+              <div id="contenidoVariable">
+
+              </div>
+              <div class="holder">
+                <div class="audio green-audio-player">
+                  <div class="loading">
+                    <div class="spinner"></div>
+                  </div>
+                  <div class="play-pause-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                      <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon"
+                        id="playPause" />
+                    </svg>
+                  </div>
+
+                  <div class="controls">
+                    <span class="current-time">0:00</span>
+                    <div class="slider" data-direction="horizontal">
+                      <div class="progress">
+                        <div class="pin" id="progress-pin" data-method="rewind"></div>
+                      </div>
+                    </div>
+                    <span class="total-time">0:00</span>
+                  </div>
+
+                  <div class="volume">
+                    <div class="volume-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#566574" fill-rule="evenodd"
+                          d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
+                          id="speaker" />
+                      </svg>
+                    </div>
+                    <div class="volume-controls hidden">
+                      <div class="slider" data-direction="vertical">
+                        <div class="progress">
+                          <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <audio id="mp3player" src="">
+
+                </div>
+
+              </div>
+
+              <input type="button" name="close" class="close btn line" value="Cerrar" />
+              <input type="button" name="next" class="next btn" value="Continuar" />
+
+
+            </fieldset>
+
+            <fieldset>
+              <div class="form">
+                <div class="background"></div>
+                <div class="formulario">
+
+                  <div class="campo">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="NAME" placeholder="" id="mce-NOMBRE" required="">
+                  </div>
+                  <div class="campo">
+                    <label for="lname">Apellido</label>
+                    <input type="text" name="SURNAME" placeholder="" id="mce-APELLIDO" required="">
+                  </div>
+                  <div class="campo">
+                    <label for="lname">Teléfono</label>
+                    <input type="text" name="Telefono" placeholder="" id="mce-TELEFONO">
+                  </div>
+                  <div class="campo">
+                    <label for="lname">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      name="EMAIL" placeholder="" id="mce-EMAIL" required
+                      oninvalid="this.setCustomValidity('Por favor ingresá un email correcto')">
+                  </div>
+                  <div class="campo">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" name="EMPRESA" placeholder="" id="mce-Empresa" required="">
+                  </div>
+                  <div class="campo">
+                    <label for="comments">Comentarios</label>
+                    <input type="text" cols="30" rows="4" name="COMENTARIO" placeholder="" id="mce-Comentarios"></input>
+                  </div>
+                  <h4 class="aviso">Si ya completaste el formulario con tus datos solicitando el material, no hace falta
+                    volverlo
+                    a hacer.</h4>
+                  <!--<input type="button" name="close" class="previous btn line" value="Atrás" />-->
+                  <button class="btn" type="submit" value="Enviar">ENVIAR</button>
+                </div>
+
+              </div>
+            </fieldset>
+          </form>
+
+
         </div>
 
-        <div id="skill" class="tabcontent">
-          <div class="grid">
-            <div class="item">
-              <div class="iframe"></div>
-              <div class="content-text"></div>
-            </div>
-          </div>
-        </div>
       </section>
 
+      <!-- CITAS -->
+      <!-- 
       <h2 class="titulos" aria-label="Invitados">
         <center>Invitados</center>
       </h2>
@@ -201,7 +302,9 @@
         <div class="owl-carousel owl-theme" id="owl-inv">
           <div ng-repeat="cita in citas" class="item">
 
-            <img class="logo" src="./images/opencoffework.png" alt="logo open coffee work">
+            <img class="logo"
+              src="https://www.nespresso.com/ecom/medias/sys_master/public/13570075426846/opencoffework.png?"
+              alt="logo open coffee work">
             <h3>"{{cita.quote}}"</h3>
             <div class="autor">
               <div class="img" style="background-image: url('./images/{{cita.foto}}');"></div>
@@ -213,8 +316,8 @@
           </div>
         </div>
 
-      </section>
-      
+      </section> -->
+
       <section id="contact">
         <h2 class="titulos" aria-label="Contacto">
           <center>Contacto</center>
@@ -222,24 +325,41 @@
         <div class="form">
           <div class="background"></div>
           <div class="formulario">
-            <form id="footerContact" action="">
+            <form action="https://www.nespresso.com/ebm/index.php" method="POST" id="form">
+              <input type="hidden" name="to[]" value="promosecommerce@nespresso.com" />
+              <input type="hidden" name="market" value="AR" />
+              <input type="hidden" name="campaign" value="Open Coffee Work" />
               <div class="campo">
                 <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" name="NAME" placeholder="" id="mce-NOMBRE" required="">
               </div>
               <div class="campo">
                 <label for="lname">Apellido</label>
-                <input type="text" id="lname" name="lname" required>
+                <input type="text" name="SURNAME" placeholder="" id="mce-APELLIDO" required="">
+              </div>
+              <div class="campo">
+                <label for="lname">Teléfono</label>
+                <input type="text" name="Telefono" placeholder="" id="mce-TELEFONO">
+              </div>
+              <div class="campo">
+                <label for="lname">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  name="EMAIL" placeholder="" id="mce-EMAIL" required
+                  oninvalid="this.setCustomValidity('Por favor ingresá un email correcto')">
               </div>
               <div class="campo">
                 <label for="empresa">Empresa</label>
-                <input type="text" id="empresa" name="empresa" required>
+                <input type="text" name="EMPRESA" placeholder="" id="mce-Empresa" required="">
               </div>
               <div class="campo">
                 <label for="comments">Comentarios</label>
-                <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
+                <input type="text" cols="30" rows="4" name="COMENTARIO" placeholder="" id="mce-Comentarios"></input>
               </div>
-              <button class="btn" type="submit" value="Enviar">Enviar</button>
+              <h4 class="aviso">Si ya completaste el formulario con tus datos solicitando el material, no hace falta
+                volverlo
+                a hacer.</h4>
+              <!--<input type="button" name="close" class="previous btn line" value="Atrás" />-->
+              <button class="btn" type="submit" value="Enviar">ENVIAR</button>
             </form>
           </div>
 
@@ -251,60 +371,8 @@
 
   </div>
 
-  <div class="dialog-form" id="dialog-steps">
-    <!-- multistep form -->
-    <form id="msform">
-      <!-- progressbar -->
-
-      <!-- fieldsets -->
-      <fieldset>
-        <center>
-          <p> ¿Te gustaría acceder al material completo?</p>
-        </center>
-        <h4>
-          <center> ¡Dejanos tus datos y te lo enviamos!</center>
-        </h4>
-        <img style="max-width:100%" src="http://files.encendercomunicacion.com/nespresso/infografia.jpg" alt="">
-        <input type="button" name="close" class="close btn line" value="Cerrar" />
-        <input type="button" name="next" class="next btn" value="Continuar" />
-
-
-      </fieldset>
-
-      <fieldset>
-        <div class="campo">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="campo">
-          <label for="lname">Apellido</label>
-          <input type="text" id="lname" name="lname" required>
-        </div>
-        <div class="campo">
-          <label for="empresa">Empresa</label>
-          <input type="text" id="empresa" name="empresa" required>
-        </div>
-        <div class="campo">
-          <label for="comments">Comentarios</label>
-          <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
-        </div>
-        <h4 class="aviso">Si ya completaste el formulario con tus datos solicitando el material, no hace falta volverlo
-          a hacer.</h4>
-        <input type="button" name="close" class="previous btn line" value="Atrás" />
-        <button type="submit" name="submit" class="submit btn" value="Cerrar">Enviar</button>
-      </fieldset>
-      <fieldset>
-
-
-
-
-      </fieldset>
-    </form>
-
-  </div>
-
-  <!-- <script src="./js/jquery-ui.js"></script> -->
   <script src="./js/events.js"></script>
+  <script src="./js/player.js"></script>
 
   <script>
     "use strict";
@@ -342,9 +410,55 @@
         });
       }, 500);
       $('button').removeClass('ui-button ui-corner-all ui-widget');
-      $('#msform').submit(function () {
-        console.log('formulario terminado');
-      });
+
+    });
+  </script>
+  <!-- JS -->
+  <script>
+    $("#form").submit(function (event) {
+      event.preventDefault();
+      gtmDataObject.push({
+        'event': 'customEvent', //This is required here
+        'eventCategory': 'User Engagement', //This is required and critical
+        'eventAction': 'New User Form Submit', //This is required and critical, name of the action
+        'eventLabel': 'Open Coffee Work Contact Form', // Put here any description of the action in order to identify this event in GA
+      })
+      $.post($(this).attr("action"), $("#form").serialize())
+        .done(function (data) {
+          /*if (data==1) {alert("ok");} else {alert( "second success "+data);}*/
+          window.location = 'https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional';
+        })
+        .fail(function (data) {
+          console.log("error " + data);
+        })
+        .always(function () {
+          alert("Gracias por registrarse. Serás contactado a la brevedad.");
+          window.location = 'https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional';
+        });
+    });
+  </script>
+  <!-- JS -->
+  <script>
+    $("#form2").submit(function (event) {
+      event.preventDefault();
+      gtmDataObject.push({
+        'event': 'customEvent', //This is required here
+        'eventCategory': 'User Engagement', //This is required and critical
+        'eventAction': 'New User Form Submit', //This is required and critical, name of the action
+        'eventLabel': 'Open Coffee Work Contact Form', // Put here any description of the action in order to identify this event in GA
+      })
+      $.post($(this).attr("action"), $("#form2").serialize())
+        .done(function (data) {
+          /*if (data==1) {alert("ok");} else {alert( "second success "+data);}*/
+          window.location = 'https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional';
+        })
+        .fail(function (data) {
+          console.log("error " + data);
+        })
+        .always(function () {
+          alert("Gracias por registrarse. Serás contactado a la brevedad.");
+          window.location = 'https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional';
+        });
     });
   </script>
 </body>

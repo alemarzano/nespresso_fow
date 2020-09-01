@@ -20,7 +20,7 @@ function openNav() {
     'display': 'block'
   });
   $(icon).attr('onclick', 'closeNav()');
-  $(icon).html("<img src='images/close.svg' alt=''>");
+  $(icon).html("<img src='https://www.nespresso.com/ecom/medias/sys_master/public/13569792311326/close.svg?' alt=''>");
 }
 
 function closeNav() {
@@ -38,35 +38,14 @@ function closeNav() {
     'opacity': '0'
   });
   $(icon).attr('onclick', 'openNav()');
-  $(icon).html("<img src='images/menu.svg' alt=''>");
+  $(icon).html("<img src='https://www.nespresso.com/ecom/medias/sys_master/public/13569944748062/menu.svg?' alt=''>");
 }
 
 $(overlay).click(function () {
   closeNav();
 });
 
-var tabcontent = document.getElementsByClassName("tabcontent");
-tabcontent[0].style.display = "block";
 
-function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tablinks; // Get all elements with class="tabcontent" and hide them
-
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  } // Get all elements with class="tablinks" and remove the class "active"
-
-
-  tablinks = document.getElementsByClassName("tablinks");
-
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  } // Show the current tab, and add an "active" class to the button that opened the tab
-
-
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 
 $(document).ready(function () {
   /**********/
@@ -74,7 +53,7 @@ $(document).ready(function () {
   owlInv.owlCarousel({
     loop: true,
     nav: true,
-    navText: ["<img src='./images/left.svg'>", "<img src='./images/right.svg'>"],
+    navText: ["<img src='https://www.nespresso.com/ecom/medias/sys_master/public/13569944813598/left.svg?'>", "<img src='https://www.nespresso.com/ecom/medias/sys_master/public/13570078375966/right.svg?'>"],
     dots: false,
     items: 1,
     autoplay: true,
@@ -87,7 +66,9 @@ $(document).ready(function () {
       }
     }
   });
-  /**********/
+
+
+  /***** POPUP EVENTOS *****/
 
   var dialog_steps = $("#dialog-steps").dialog({
     autoOpen: false,
@@ -98,9 +79,9 @@ $(document).ready(function () {
     modal: true,
     fluid: true,
     resizable: false,
-    showTitleBar:false,
+    showTitleBar: false,
     close: closeModal,
-    create: function( event, ui ) {
+    create: function (event, ui) {
       // Set maxWidth
       $(this).css("maxWidth", "660px");
     },
@@ -111,21 +92,115 @@ $(document).ready(function () {
   });
 
   var botonModal = $('.open-dialog');
+  var audioDiv = dialog_steps.children('form').find('.holder')
+  var mp3Player = audioDiv.find('#mp3player')
+  var divVariable = dialog_steps.children('form').find('#contenidoVariable');
+
   $(botonModal).on("click", function () {
+
+    var content = $(this).data('content');
+    var tab = $(this).data('evento')
+    var podcasts = [{
+        evento: 'inteligencia',
+        link: './media/podcast_inteligencia.mp3'
+      },
+      {
+        evento: 'skill',
+        link: './media/podcast_.mp3'
+      },
+      {
+        evento: 'future',
+        link: './media/podcast_.mp3'
+      }
+    ];
+    var infos = [{
+        evento: 'inteligencia',
+        link: './media/infografia_inteligencia.jpg'
+      },
+      {
+        evento: 'skill',
+        link: './media/'
+      },
+      {
+        evento: 'future',
+        link: './media/'
+      }
+    ]
+    var papers = [{
+        evento: 'inteligencia',
+        link: './media/.jpg'
+      },
+      {
+        evento: 'skill',
+        link: './media/.jpg'
+      },
+      {
+        evento: 'future',
+        link: './media/.jpg'
+      }
+    ]
+
+    var imagen = '';
+    switch (content) {
+
+      case 'info':
+
+        for (const index in infos) {
+          if (tab == infos[index].evento)
+            var link = infos[index].link;
+          var imagen = `<img style="max-width:100%" src="${link}" alt="">`
+        }
+        $(divVariable).append(imagen)
+        break;
+      case 'paper':
+        for (const index in papers) {
+          if (tab == papers[index].evento)
+            var link = papers[index].link;
+          var imagen = `<img style="max-width:100%" src="${link}" alt="">`
+        }
+        $(divVariable).append(imagen)
+        break;
+      case 'podcast':
+
+        for (const index in podcasts) {
+          if (tab == podcasts[index].evento)
+            var link = podcasts[index].link;
+          mp3Player.attr('src', link)
+          mp3Player[0].load();
+        }
+        $(audioDiv).addClass('display')
+        togglePlay();
+
+        break;
+
+      default:
+        break;
+    }
+
     dialog_steps.dialog("open");
     $(overlay).show('fade');
   });
+
+
   $('.close').on('click', function () {
     dialog_steps.dialog('close');
+
   });
 
   function closeModal() {
     $(overlay).hide('fade');
     restartDialog(); // .show()
+    if (audioDiv.hasClass('display')) {
+      mp3Player[0].pause();
+      mp3Player[0].currentTime = 0;
+      audioDiv.removeClass('display');
+    }
   }
 
   function restartDialog() {
-    var fieldsets = $('#msform > fieldset');
+    var fieldsets = $('form > fieldset');
+
+    $(divVariable).empty()
     $(fieldsets).each(function (element, value) {
       $(value).hide().css({
         'transform': 'scale(1)',
@@ -141,10 +216,11 @@ $(document).ready(function () {
   }
 
   function thankYou() {
-    // window.location.href = "thankyou.html";
-    window.open('thankyou.html')
+    window.location.href = "https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional";
+    //window.open('https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional')
   }
-  /**********/
+
+  /**** POPUP STEPS******/
 
 
   var current_fs, next_fs, previous_fs; //fieldsets
@@ -160,7 +236,13 @@ $(document).ready(function () {
     next_fs = $(this).parent().next(); //show the next fieldset
 
     next_fs.show(); //hide the current fieldset with style
+    if ($('.holder').hasClass('display')) {
+      var $this = $('.holder')
 
+      var mp3 = $this.find('#mp3player');
+      mp3[0].pause();
+      $this.removeClass('display');
+    }
     current_fs.animate({
       opacity: 0
     }, {
@@ -230,4 +312,27 @@ $(document).ready(function () {
     });
   });
 
+  /***** TABS ****/
+  var tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent[0].style.display = "block";
+
+  function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tablinks; // Get all elements with class="tabcontent" and hide them
+
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    } // Get all elements with class="tablinks" and remove the class "active"
+
+
+    tablinks = document.getElementsByClassName("tablinks");
+
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    } // Show the current tab, and add an "active" class to the button that opened the tab
+
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
 });
