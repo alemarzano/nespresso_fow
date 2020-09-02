@@ -17,7 +17,7 @@
 
   <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13569947664414/jquery.js"></script>
   <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13569947926558/owl-carousel.js"></script>
-  <script src="./js/angularjs.js"></script>>
+  <script src="./js/angularjs.js"></script>
   <script src="./js/app.js"></script>
 </head>
 
@@ -115,7 +115,7 @@
         </div>
       </section>
 
-      <section id="encuentros" ng-controller="encuentrosCtrlr">
+      <section id="encuentros">
         <h2 class="titulos" aria-label="Encuentros">
           <center>Encuentros</center>
         </h2>
@@ -131,9 +131,17 @@
         <div id='inteligencia' class="tabcontent active">
           <div class="grid">
             <div class="item-grid">
-              <div class="iframe">
-                <iframe width="100%" height="100%" src="https://youtube.com/embed/WPRvsASEmkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- Nuevo Box de Video -->
+              <div class="videoWrapper picture js-videoWrapper">
+
+                <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/WPRvsASEmkA?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+                <button class="videoPoster js-videoPoster"
+                  style="background-image: url('https://www.nespresso.com/ecom/medias/sys_master/public/13569958445086/encuentros-inteligencia.jpg?');">Play
+                  video</button>
               </div>
+
               <div class="text">
                 <div class="content">
                   <div class="titulo">
@@ -141,7 +149,10 @@
                       alt="">
                     <h3 aria-label="Inteligencia Colaborativa">Inteligencia Colaborativa</h3>
                   </div>
-                  <p>Los <strong>avances exponenciales de las tecnologías</strong> plantean nuevos desafíos para las estructuras mentales y organizacionales de los modelos tradicionales de las empresas.</p> <p> <strong>¿Cómo potenciar el poder de las capacidades humanas en este nuevo auge digital?</strong> </p>
+                  <p>Los <strong>avances exponenciales de las tecnologías</strong> plantean nuevos desafíos para las
+                    estructuras mentales y organizacionales de los modelos tradicionales de las empresas.</p>
+                  <p> <strong>¿Cómo potenciar el poder de las capacidades humanas en este nuevo auge digital?</strong>
+                  </p>
 
                   <button data-evento="inteligencia" data-content="info" class="down open-dialog"
                     aria-label="Ver infografía">Ver infografía</button>
@@ -151,14 +162,16 @@
             </div>
             <div class="item-grid">
               <div class="picture">
-                <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13570075361310/encuentros-manes.jpg?" alt="">
+                <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13570075361310/encuentros-manes.jpg?"
+                  alt="">
               </div>
               <div class="text">
                 <div class="content cita">
                   <div class="titulo">
                     <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13569948352542/icon-cup.svg?"
                       alt="">
-                    <h3  class="quote">"Ser inteligente tiene que ver con tener flexibilidad para mirar un problema, ver una posibilidad nueva, una salida que no fue pensada."</h3>
+                    <h3 class="quote">"Ser inteligente tiene que ver con tener flexibilidad para mirar un problema, ver
+                      una posibilidad nueva, una salida que no fue pensada."</h3>
                   </div>
 
                   <button data-evento="inteligencia" data-content="podcast" class="speak open-dialog"
@@ -232,7 +245,7 @@
                     </div>
                   </div>
 
-                  <audio id="mp3player" src="">
+                  <audio preload="none" id="mp3player" src=""></audio>
 
                 </div>
 
@@ -410,6 +423,26 @@
         });
       }, 500);
       $('button').removeClass('ui-button ui-corner-all ui-widget');
+
+      // Función para Box de Video
+      $('.js-videoPoster').on('click', function (ev) {
+        ev.preventDefault();
+        var $poster = $(this);
+        var $wrapper = $poster.closest('.js-videoWrapper');
+        $poster.addClass('videoWrapperActive');
+        videoPlay($wrapper);
+      });
+
+      // play the targeted video (and hide the poster frame)
+      function videoPlay($wrapper) {
+        var $iframe = $wrapper.find('.js-videoIframe');
+        var src = $iframe.data('src');
+        // hide poster
+
+        // add iframe src in, starting the video
+        $iframe.attr('src', src);
+      }
+      // END Función para Box de Video
 
     });
   </script>
