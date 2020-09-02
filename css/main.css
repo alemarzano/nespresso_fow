@@ -698,34 +698,25 @@ form button {
   border-color: #000;
   color: #000;
 }
-.dialog-form#dialog-steps body {
-  margin: 0;
-}
 .dialog-form#dialog-steps .holder {
   display: none;
   flex-direction: column;
   align-items: center;
   margin: 80px 0;
 }
-.dialog-form#dialog-steps .holder .get-it-on-github {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  font-family: "Roboto";
-  color: #55606E;
-}
 .dialog-form#dialog-steps .holder.display {
   display: flex;
 }
 .dialog-form#dialog-steps .audio.green-audio-player {
-  width: 400px;
-  min-width: 300px;
+  max-width: 400px;
+  width: 100%;
   height: 56px;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 1em;
+  padding-right: 1em;
   border-radius: 4px;
   user-select: none;
   -webkit-user-select: none;
@@ -1086,6 +1077,7 @@ form button {
   .dialog-form#dialog-steps h4,
 .dialog-form#dialog-steps p {
     font-size: 20px;
+    color: #000;
   }
   .dialog-form#dialog-steps form fieldset:nth-child(2) {
     padding: 97px 70px 63px 78px;
