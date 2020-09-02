@@ -38,7 +38,7 @@ app.controller('oradoresCtrlr', function ($scope) {
       opacity: 0
     });
     setTimeout(function () {
-     var idActivo = $('.owl-oradores .owl-item')[e.item.index];
+      var idActivo = $('.owl-oradores .owl-item')[e.item.index];
       idActivo = $(idActivo).children('.item').data('index');
 
       for (var orador in $scope.oradores) {

@@ -44,9 +44,6 @@ function closeNav() {
 $(overlay).click(function () {
   closeNav();
 });
-
-
-
 $(document).ready(function () {
   /**********/
   var owlInv = $('#owl-inv');
@@ -66,8 +63,6 @@ $(document).ready(function () {
       }
     }
   });
-
-
   /***** POPUP EVENTOS *****/
 
   var dialog_steps = $("#dialog-steps").dialog({
@@ -81,7 +76,7 @@ $(document).ready(function () {
     resizable: false,
     showTitleBar: false,
     close: closeModal,
-    create: function (event, ui) {
+    create: function create(event, ui) {
       // Set maxWidth
       $(this).css("maxWidth", "660px");
     },
@@ -90,87 +85,73 @@ $(document).ready(function () {
       at: 'center'
     }
   });
-
   var botonModal = $('.open-dialog');
-  var audioDiv = dialog_steps.children('form').find('.holder')
-  var mp3Player = audioDiv.find('#mp3player')
+  var audioDiv = dialog_steps.children('form').find('.holder');
+  var mp3Player = audioDiv.find('#mp3player');
   var divVariable = dialog_steps.children('form').find('#contenidoVariable');
-
   $(botonModal).on("click", function () {
-
     var content = $(this).data('content');
-    var tab = $(this).data('evento')
+    var tab = $(this).data('evento');
     var podcasts = [{
-        evento: 'inteligencia',
-        link: './media/podcast_inteligencia.mp3'
-      },
-      {
-        evento: 'skill',
-        link: './media/podcast_.mp3'
-      },
-      {
-        evento: 'future',
-        link: './media/podcast_.mp3'
-      }
-    ];
+      evento: 'inteligencia',
+      link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13600474071070/podcast-inteligencia.mpg?'
+    }, {
+      evento: 'skill',
+      link: './media/podcast_.mp3'
+    }, {
+      evento: 'future',
+      link: './media/podcast_.mp3'
+    }];
     var infos = [{
-        evento: 'inteligencia',
-        link: './media/infografia_inteligencia.jpg'
-      },
-      {
-        evento: 'skill',
-        link: './media/'
-      },
-      {
-        evento: 'future',
-        link: './media/'
-      }
-    ]
+      evento: 'inteligencia',
+      link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13600473481246/infografia-inteligencia.jpg?'
+    }, {
+      evento: 'skill',
+      link: './media/'
+    }, {
+      evento: 'future',
+      link: './media/'
+    }];
     var papers = [{
-        evento: 'inteligencia',
-        link: './media/.jpg'
-      },
-      {
-        evento: 'skill',
-        link: './media/.jpg'
-      },
-      {
-        evento: 'future',
-        link: './media/.jpg'
-      }
-    ]
-
+      evento: 'inteligencia',
+      link: './media/.jpg'
+    }, {
+      evento: 'skill',
+      link: './media/.jpg'
+    }, {
+      evento: 'future',
+      link: './media/.jpg'
+    }];
     var imagen = '';
+
     switch (content) {
-
       case 'info':
-
-        for (const index in infos) {
-          if (tab == infos[index].evento)
-            var link = infos[index].link;
-          var imagen = `<img style="max-width:100%" src="${link}" alt="">`
+        for (var index in infos) {
+          if (tab == infos[index].evento) var link = infos[index].link;
+          var imagen = "<img style=\"max-width:100%\" src=\"" + link + "\" alt=\"\">";
         }
-        $(divVariable).append(imagen)
+
+        $(divVariable).append(imagen);
         break;
+
       case 'paper':
-        for (const index in papers) {
-          if (tab == papers[index].evento)
-            var link = papers[index].link;
-          var imagen = `<img style="max-width:100%" src="${link}" alt="">`
+        for (var _index in papers) {
+          if (tab == papers[_index].evento) var link = papers[_index].link;
+          var imagen = "<img style=\"max-width:100%\" src=\"" + link + "\" alt=\"\">";
         }
-        $(divVariable).append(imagen)
-        break;
-      case 'podcast':
 
-        for (const index in podcasts) {
-          if (tab == podcasts[index].evento)
-            var link = podcasts[index].link;
-          mp3Player.attr('src', link)
+        $(divVariable).append(imagen);
+        break;
+
+      case 'podcast':
+        for (var _index2 in podcasts) {
+          if (tab == podcasts[_index2].evento) var link = podcasts[_index2].link;
+          mp3Player.attr('src', link);
           mp3Player[0].load();
         }
-        $(audioDiv).addClass('display')
-        togglePlay();
 
+        $(audioDiv).addClass('display');
+        togglePlay();
         break;
 
       default:
@@ -180,16 +161,14 @@ $(document).ready(function () {
     dialog_steps.dialog("open");
     $(overlay).show('fade');
   });
-
-
   $('.close').on('click', function () {
     dialog_steps.dialog('close');
-
   });
 
   function closeModal() {
     $(overlay).hide('fade');
     restartDialog(); // .show()
+
     if (audioDiv.hasClass('display')) {
       mp3Player[0].pause();
       mp3Player[0].currentTime = 0;
@@ -199,8 +178,7 @@ $(document).ready(function () {
 
   function restartDialog() {
     var fieldsets = $('form > fieldset');
-
-    $(divVariable).empty()
+    $(divVariable).empty();
     $(fieldsets).each(function (element, value) {
       $(value).hide().css({
         'transform': 'scale(1)',
@@ -216,10 +194,8 @@ $(document).ready(function () {
   }
 
   function thankYou() {
-    window.location.href = "https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional";
-    //window.open('https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional')
+    window.location.href = "https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional"; //window.open('https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional')
   }
-
   /**** POPUP STEPS******/
 
 
@@ -236,13 +212,14 @@ $(document).ready(function () {
     next_fs = $(this).parent().next(); //show the next fieldset
 
     next_fs.show(); //hide the current fieldset with style
-    if ($('.holder').hasClass('display')) {
-      var $this = $('.holder')
 
+    if ($('.holder').hasClass('display')) {
+      var $this = $('.holder');
       var mp3 = $this.find('#mp3player');
       mp3[0].pause();
       $this.removeClass('display');
     }
+
     current_fs.animate({
       opacity: 0
     }, {
@@ -311,8 +288,8 @@ $(document).ready(function () {
       easing: 'easeInOutBack'
     });
   });
-
   /***** TABS ****/
+
   var tabcontent = document.getElementsByClassName("tabcontent");
   tabcontent[0].style.display = "block";
 
