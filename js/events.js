@@ -87,7 +87,7 @@ $(document).ready(function () {
   });
   var botonModal = $('.open-dialog');
   var audioDiv = dialog_steps.children('form').find('.holder');
-  var mp3Player = audioDiv.find('#mp3player');
+  var mp3Player = audioDiv.children('audio');
   var divVariable = dialog_steps.children('form').find('#contenidoVariable');
   $(botonModal).on("click", function () {
     var content = $(this).data('content');
@@ -148,10 +148,11 @@ $(document).ready(function () {
           if (tab == podcasts[_index2].evento) var link = podcasts[_index2].link;
           mp3Player.attr('src', link);
           mp3Player[0].load();
+          mp3Player[0].play();
         }
 
         $(audioDiv).addClass('display');
-        togglePlay();
+        // togglePlay();
         break;
 
       default:
@@ -215,7 +216,7 @@ $(document).ready(function () {
 
     if ($('.holder').hasClass('display')) {
       var $this = $('.holder');
-      var mp3 = $this.find('#mp3player');
+      var mp3 = $this.children('audio');
       mp3[0].pause();
       $this.removeClass('display');
     }
@@ -311,5 +312,26 @@ $(document).ready(function () {
 
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+
+    $(document).on('click', '.js-videoPoster', function (ev) {
+      ev.preventDefault();
+      var $poster = $(this);
+      var $wrapper = $poster.closest('.js-videoWrapper');
+      videoPlay($wrapper);
+    });
+
+    // play the targeted video (and hide the poster frame)
+    function videoPlay($wrapper) {
+      var $iframe = $wrapper.find('.js-videoIframe');
+      var src = $iframe.data('src');
+      // hide poster
+      $wrapper.addClass('videoWrapperActive');
+      // add iframe src in, starting the video
+      $iframe.attr('src', src);
+    }
+
+
+    //* VIDEO WRAPPER * //
+
   }
 });
