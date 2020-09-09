@@ -640,6 +640,7 @@ form button {
   -webkit-transition-delay: 0s, 800ms;
   -moz-transition-delay: 0s, 800ms;
   transition-delay: 0s, 800ms;
+  display: none;
 }
 @keyframes fadeEffect {
   from {

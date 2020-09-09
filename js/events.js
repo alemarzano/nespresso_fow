@@ -147,8 +147,6 @@ $(document).ready(function () {
         for (var _index2 in podcasts) {
           if (tab == podcasts[_index2].evento) var link = podcasts[_index2].link;
           mp3Player.attr('src', link);
-          mp3Player[0].load();
-          mp3Player[0].play();
         }
 
         $(audioDiv).addClass('display');
