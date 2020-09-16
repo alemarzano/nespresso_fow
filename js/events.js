@@ -87,14 +87,14 @@ $(document).ready(function () {
   });
   var botonModal = $('.open-dialog');
   var audioDiv = dialog_steps.children('form').find('.holder');
-  var mp3Player = audioDiv.children('audio');
+  var mp3Player = audioDiv.children('iframe');
   var divVariable = dialog_steps.children('form').find('#contenidoVariable');
   $(botonModal).on("click", function () {
     var content = $(this).data('content');
     var tab = $(this).data('evento');
     var podcasts = [{
       evento: 'inteligencia',
-      link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13600474071070/podcast-inteligencia.mpg?'
+      link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/893804278&color=%23b99a62&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
     }, {
       evento: 'skill',
       link: './media/podcast_.mp3'
@@ -148,7 +148,7 @@ $(document).ready(function () {
           if (tab == podcasts[_index2].evento) var link = podcasts[_index2].link;
           mp3Player.attr('src', link);
         }
-
+        console.log(mp3Player)
         $(audioDiv).addClass('display');
         // togglePlay();
         break;
@@ -169,8 +169,7 @@ $(document).ready(function () {
     restartDialog(); // .show()
 
     if (audioDiv.hasClass('display')) {
-      mp3Player[0].pause();
-      mp3Player[0].currentTime = 0;
+      mp3Player.attr('src', '')
       audioDiv.removeClass('display');
     }
   }
@@ -213,10 +212,7 @@ $(document).ready(function () {
     next_fs.show(); //hide the current fieldset with style
 
     if ($('.holder').hasClass('display')) {
-      var $this = $('.holder');
-      var mp3 = $this.children('audio');
-      mp3[0].pause();
-      $this.removeClass('display');
+      mp3Player.attr('src', '')
     }
 
     current_fs.animate({
@@ -311,25 +307,28 @@ $(document).ready(function () {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 
-    $(document).on('click', '.js-videoPoster', function (ev) {
-      ev.preventDefault();
-      var $poster = $(this);
-      var $wrapper = $poster.closest('.js-videoWrapper');
-      videoPlay($wrapper);
-    });
-
-    // play the targeted video (and hide the poster frame)
-    function videoPlay($wrapper) {
-      var $iframe = $wrapper.find('.js-videoIframe');
-      var src = $iframe.data('src');
-      // hide poster
-      $wrapper.addClass('videoWrapperActive');
-      // add iframe src in, starting the video
-      $iframe.attr('src', src);
-    }
-
-
-    //* VIDEO WRAPPER * //
 
   }
+    //* VIDEO WRAPPER * //
+    
+  $('.js-videoPoster').on('click',function (ev) {
+    ev.preventDefault();
+    var $poster = $(this);
+    var $wrapper = $poster.closest('.js-videoWrapper');
+    videoPlay($wrapper);
+  });
+
+  // play the targeted video (and hide the poster frame)
+  function videoPlay($wrapper) {
+    var $iframe = $wrapper.find('.js-videoIframe');
+    var src = $iframe.data('src');
+    // hide poster
+    $wrapper.addClass('videoWrapperActive');
+    // add iframe src in, starting the video
+    $iframe.attr('src', src);
+  }
+
+
+
+
 });
