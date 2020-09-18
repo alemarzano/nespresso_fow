@@ -488,6 +488,7 @@ form button {
   color: #000;
 }
 #ocw-container #encuentros .tabcontent {
+  display: none;
   animation: fadeEffect 1s;
 }
 #ocw-container #encuentros .tabcontent .grid .item-grid {
@@ -659,14 +660,16 @@ form button {
 }
 #ocw-container #invitados #owl-inv .item h3 {
   color: #FFF;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.1em;
+  letter-spacing: 1px;
+  min-height: 104px;
 }
 #ocw-container #invitados #owl-inv .item .autor {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 20px;
 }
 #ocw-container #invitados #owl-inv .item .autor .img {
@@ -738,6 +741,7 @@ form button {
 .dialog-form#dialog-steps h4,
 .dialog-form#dialog-steps p {
   margin: 0;
+  color: #000;
 }
 .dialog-form#dialog-steps h4.aviso,
 .dialog-form#dialog-steps p.aviso {
@@ -1135,9 +1139,10 @@ form button {
     width: 96px;
   }
   #ocw-container #invitados #owl-inv .item h3 {
-    font-size: 32px;
-    line-height: 97%;
-    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 500;
+    min-height: 144px;
   }
   #ocw-container #invitados #owl-inv .item .autor .img {
     width: 120px;

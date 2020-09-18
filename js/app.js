@@ -55,16 +55,3 @@ app.controller('oradoresCtrlr', function ($scope) {
     }, 250);
   });
 });
-app.controller('citasCtrlr', function ($scope) {
-  $scope.citas = [{
-    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quae cumque asperiores facere dolorem.Cumque?",
-    "foto": "foto.webp",
-    "nombre": "Lorem, ipsum",
-    "puesto": "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-  }, {
-    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quae cumque asperiores facere dolorem.Cumque?",
-    "foto": "foto.webp",
-    "nombre": "Lorem, ipsum",
-    "puesto": "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-  }];
-});

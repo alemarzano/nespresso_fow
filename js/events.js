@@ -46,23 +46,7 @@ $(overlay).click(function () {
 });
 $(document).ready(function () {
   /**********/
-  var owlInv = $('#owl-inv');
-  owlInv.owlCarousel({
-    loop: true,
-    nav: true,
-    navText: ["<img src='https://www.nespresso.com/ecom/medias/sys_master/public/13569944813598/left.svg?'>", "<img src='https://www.nespresso.com/ecom/medias/sys_master/public/13570078375966/right.svg?'>"],
-    dots: false,
-    items: 1,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    responsive: {
-      767: {
-        items: 2,
-        slideBy: 2
-      }
-    }
-  });
+
   /***** POPUP EVENTOS *****/
 
   var dialog_steps = $("#dialog-steps").dialog({
@@ -283,35 +267,10 @@ $(document).ready(function () {
       easing: 'easeInOutBack'
     });
   });
-  /***** TABS ****/
 
-  var tabcontent = document.getElementsByClassName("tabcontent");
-  tabcontent[0].style.display = "block";
+  //* VIDEO WRAPPER * //
 
-  function openTab(evt, tabName) {
-    // Declare all variables
-    var i, tablinks; // Get all elements with class="tabcontent" and hide them
-
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    } // Get all elements with class="tablinks" and remove the class "active"
-
-
-    tablinks = document.getElementsByClassName("tablinks");
-
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    } // Show the current tab, and add an "active" class to the button that opened the tab
-
-
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-
-
-  }
-    //* VIDEO WRAPPER * //
-    
-  $('.js-videoPoster').on('click',function (ev) {
+  $('.js-videoPoster').on('click', function (ev) {
     ev.preventDefault();
     var $poster = $(this);
     var $wrapper = $poster.closest('.js-videoWrapper');
@@ -328,7 +287,118 @@ $(document).ready(function () {
     $iframe.attr('src', src);
   }
 
+  var owlInv = $('#owl-inv');
+  var citas = [{
+      "quote": "La clave es el <strong>propósito</strong> que hay detrás de todo lo que se haga. Sin un propósito es más difícil sostener la <strong>motivación</strong> de las personas.",
+      "foto": "./images/quotes/quote_natura.jpg",
+      "nombre": "Carolina Vincenzini",
+      "puesto": "Gerente RRHH",
+      "empresa":"Natura"
+    },
+    {
+      "quote": "El primer desafío es convencernos de que los <strong>equipos colaborativos</strong> pueden tener una efectividad mayor.",
+      "foto": "./images/quotes/quote_bayer.jpg",
+      "nombre": "Paula Curtale ",
+      "puesto": "Directora RRHH",
+      "empresa":"Bayer"
+    },
+    {
+      "quote": "El desafío es desarrollar la capacidad de adaptarnos al <strong>futuro</strong> teniendo en cuenta las <strong>exigencias del presente</strong>.",
+      "foto": "./images/quotes/quote_toyota.jpg",
+      "nombre": "Andrés Massuh",
+      "puesto": "Director RRHH",
+      "empresa":"Toyota"
+    },
+    {
+      "quote": "Tenemos que desarrollar a nuestros talentos en la <strong>empatía</strong> y la <strong>colaboración</strong>.",
+      "foto": "./images/quotes/quote_disney.jpg",
+      "nombre": "Mercedes De Belaustegui",
+      "puesto": "VP RRHH",
+      "empresa":"Disney"
+    },
+    {
+      "quote": "La clave de la transformación es formar organizaciones <strong>ágiles, dinámicas y vivas</strong>.",
+      "foto": "./images/quotes/quote_galicia.jpg",
+      "nombre": "Rafael Bergés",
+      "puesto": "Gerente de Personas",
+      "empresa":"Banco Galicia"
+    },
+    {
+      "quote":"Tenemos que generar <strong>experiencias relevantes y significativas</strong> para que la gente sienta el placer de cambiar." ,
+      "foto": "./images/quotes/quote_oracle.jpg",
+      "nombre": "Carolina Florez",
+      "puesto": "VP Global Women in Tech",
+      "empresa":"Oracle"
+    },
+    {
+      "quote": "Lo importante es generar entornos para que la <strong>creatividad</strong> exista pero para que también se transforme en una <strong>acción concreta</strong>.",
+      "foto": "./images/quotes/quote_accenture.jpg",
+      "nombre": "Gastón Podestá",
+      "puesto": "Director RRHH",
+      "empresa":"Accenture"
+    },
+    {
+      "quote":"Nuestro compromiso es atraer talentos y eso se logra con <strong>innovación, buen ambiente laboral y desafíos profesionales</strong>." ,
+      "foto": "./images/quotes/quote_salesforce.jpg",
+      "nombre": "Guido Ipszman",
+      "puesto": "CEO",
+      "empresa":"Salesforce"
+    },
+    {
+      "quote":"Creo que las organizaciones tienen que tener una <strong>cultura</strong> fuerte, <strong>valores</strong> compartidos y <strong>líderes</strong> bien plantados." ,
+      "foto": "./images/quotes/quote_pae.jpg",
+      "nombre": "Romina Cavanna ",
+      "puesto": "VP RRHH",
+      "empresa":"Pan American Energy"
+    },
+    {
+      "quote":"Lo importante es entender no sólo cómo <strong>colaboramos</strong> con nuestras personas sino también cómo <strong>trabajamos y aprendemos</strong> con el afuera." ,
+      "foto": "./images/quotes/quote_nestle.jpg",
+      "nombre": "María Fernanda Amado",
+      "puesto": "Directora RRHH",
+      "empresa":"Nestlé"
+    }
+  ]
+
+  function listarQuotes() {
+    var listado = '';
+    for (let unaCita in citas) {
+      var autor = citas[unaCita];
+
+      listado += `
+      <div class="item ">
+        <img class="logo" src="https://www.nespresso.com/ecom/medias/sys_master/public/13570075426846/opencoffework.png?" alt="logo open coffee work">
+        <h3>"${autor.quote}"</h3>
+        <div class="autor">
+          <div class="img" style="background-image: url('${autor.foto}');"></div>
+          <div class="name">
+            <h4>${autor.nombre}</h4>
+            <p>${autor.puesto} - ${autor.empresa}</p>
+          </div>
+        </div>
+      </div>
+      `
+    }
+    owlInv.append(listado)
 
 
+    owlInv.owlCarousel({
+      loop: true,
+      nav: true,
+      navText: ["<img src='https://www.nespresso.com/ecom/medias/sys_master/public/13569944813598/left.svg?'>", "<img src='https://www.nespresso.com/ecom/medias/sys_master/public/13570078375966/right.svg?'>"],
+      dots: false,
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        767: {
+          items: 2,
+          slideBy: 2
+        }
+      }
+    });
+  }
+  listarQuotes()
 
 });
