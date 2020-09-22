@@ -98,7 +98,7 @@ $(document).ready(function () {
     }];
     var papers = [{
       evento: 'inteligencia',
-      link: './media/.jpg'
+      link: './media/paper_inteligencia.jpg'
     }, {
       evento: 'skill',
       link: './media/.jpg'
@@ -287,6 +287,8 @@ $(document).ready(function () {
     $iframe.attr('src', src);
   }
 
+
+ /**** QUOTES ******/
   var owlInv = $('#owl-inv');
   var citas = [{
       "quote": "La clave es el <strong>propósito</strong> que hay detrás de todo lo que se haga. Sin un propósito es más difícil sostener la <strong>motivación</strong> de las personas.",
