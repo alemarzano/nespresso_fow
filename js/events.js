@@ -98,7 +98,7 @@ $(document).ready(function () {
     }];
     var papers = [{
       evento: 'inteligencia',
-      link: './media/paper_inteligencia.jpg'
+      link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13651366346782/paper-inteligencia.jpg?'
     }, {
       evento: 'skill',
       link: './media/.jpg'
@@ -288,83 +288,83 @@ $(document).ready(function () {
   }
 
 
- /**** QUOTES ******/
+  /**** QUOTES ******/
   var owlInv = $('#owl-inv');
   var citas = [{
       "quote": "La clave es el <strong>propósito</strong> que hay detrás de todo lo que se haga. Sin un propósito es más difícil sostener la <strong>motivación</strong> de las personas.",
-      "foto": "./images/quotes/quote_natura.jpg",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367723038/quote-natura.jpg?",
       "nombre": "Carolina Vincenzini",
       "puesto": "Gerente RRHH",
-      "empresa":"Natura"
+      "empresa": "Natura"
     },
     {
       "quote": "El primer desafío es convencernos de que los <strong>equipos colaborativos</strong> pueden tener una efectividad mayor.",
-      "foto": "./images/quotes/quote_bayer.jpg",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651366936606/quote-bayer.jpg?",
       "nombre": "Paula Curtale ",
       "puesto": "Directora RRHH",
-      "empresa":"Bayer"
+      "empresa": "Bayer"
     },
     {
       "quote": "El desafío es desarrollar la capacidad de adaptarnos al <strong>futuro</strong> teniendo en cuenta las <strong>exigencias del presente</strong>.",
-      "foto": "./images/quotes/quote_toyota.jpg",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368378398/quote-toyota.jpg?",
       "nombre": "Andrés Massuh",
       "puesto": "Director RRHH",
-      "empresa":"Toyota"
+      "empresa": "Toyota"
     },
     {
       "quote": "Tenemos que desarrollar a nuestros talentos en la <strong>empatía</strong> y la <strong>colaboración</strong>.",
-      "foto": "./images/quotes/quote_disney.jpg",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367526430/quote-disney.jpg?",
       "nombre": "Mercedes De Belaustegui",
       "puesto": "VP RRHH",
-      "empresa":"Disney"
+      "empresa": "Disney"
     },
     {
       "quote": "La clave de la transformación es formar organizaciones <strong>ágiles, dinámicas y vivas</strong>.",
-      "foto": "./images/quotes/quote_galicia.jpg",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367657502/quote-galicia.jpg?",
       "nombre": "Rafael Bergés",
       "puesto": "Gerente de Personas",
-      "empresa":"Banco Galicia"
+      "empresa": "Banco Galicia"
     },
     {
-      "quote":"Tenemos que generar <strong>experiencias relevantes y significativas</strong> para que la gente sienta el placer de cambiar." ,
-      "foto": "./images/quotes/quote_oracle.jpg",
+      "quote": "Tenemos que generar <strong>experiencias relevantes y significativas</strong> para que la gente sienta el placer de cambiar.",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368017950/quote-oracle.jpg?",
       "nombre": "Carolina Florez",
       "puesto": "VP Global Women in Tech",
-      "empresa":"Oracle"
+      "empresa": "Oracle"
     },
     {
       "quote": "Lo importante es generar entornos para que la <strong>creatividad</strong> exista pero para que también se transforme en una <strong>acción concreta</strong>.",
-      "foto": "./images/quotes/quote_accenture.jpg",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651366805534/quote-accenture.jpg?",
       "nombre": "Gastón Podestá",
       "puesto": "Director RRHH",
-      "empresa":"Accenture"
+      "empresa": "Accenture"
     },
     {
-      "quote":"Nuestro compromiso es atraer talentos y eso se logra con <strong>innovación, buen ambiente laboral y desafíos profesionales</strong>." ,
-      "foto": "./images/quotes/quote_salesforce.jpg",
+      "quote": "Nuestro compromiso es atraer talentos y eso se logra con <strong>innovación, buen ambiente laboral y desafíos profesionales</strong>.",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368312862/quote-salesforce.jpg?",
       "nombre": "Guido Ipszman",
       "puesto": "CEO",
-      "empresa":"Salesforce"
+      "empresa": "Salesforce"
     },
     {
-      "quote":"Creo que las organizaciones tienen que tener una <strong>cultura</strong> fuerte, <strong>valores</strong> compartidos y <strong>líderes</strong> bien plantados." ,
-      "foto": "./images/quotes/quote_pae.jpg",
+      "quote": "Creo que las organizaciones tienen que tener una <strong>cultura</strong> fuerte, <strong>valores</strong> compartidos y <strong>líderes</strong> bien plantados.",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368181790/quote-pae.jpg?",
       "nombre": "Romina Cavanna ",
       "puesto": "VP RRHH",
-      "empresa":"Pan American Energy"
+      "empresa": "Pan American Energy"
     },
     {
-      "quote":"Lo importante es entender no sólo cómo <strong>colaboramos</strong> con nuestras personas sino también cómo <strong>trabajamos y aprendemos</strong> con el afuera." ,
-      "foto": "./images/quotes/quote_nestle.jpg",
+      "quote": "Lo importante es entender no sólo cómo <strong>colaboramos</strong> con nuestras personas sino también cómo <strong>trabajamos y aprendemos</strong> con el afuera.",
+      "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367788574/quote-nestle.jpg?",
       "nombre": "María Fernanda Amado",
       "puesto": "Directora RRHH",
-      "empresa":"Nestlé"
+      "empresa": "Nestlé"
     }
   ]
 
   function listarQuotes() {
     var listado = '';
-    for (let unaCita in citas) {
+    for (let unaCita = 0; unaCita <citas.length; unaCita++) {
       var autor = citas[unaCita];
 
       listado += `
@@ -391,12 +391,12 @@ $(document).ready(function () {
       dots: false,
       items: 1,
       autoplay: true,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 400,
       autoplayHoverPause: true,
       responsive: {
         767: {
           items: 2,
-          slideBy: 2
+          slideBy: 1
         }
       }
     });
