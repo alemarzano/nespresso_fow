@@ -34,39 +34,32 @@
   font-style: normal;
   font-weight: 800;
 }
-h1, h2, h3, h4, h5, h6 {
+#ocw-container h1, #ocw-container h2, #ocw-container h3, #ocw-container h4, #ocw-container h5, #ocw-container h6 {
   font-family: "Lucas", Helvetica, sans-serif;
   font-weight: 700;
   color: black;
   margin-top: 0;
   line-height: 1.2em;
 }
-
-h1 {
+#ocw-container h1 {
   font-size: 32px;
 }
-
-h2 {
+#ocw-container h2 {
   font-size: 24px;
 }
-
-h3 {
+#ocw-container h3 {
   font-size: 18.72px;
 }
-
-h4 {
+#ocw-container h4 {
   font-size: 16px;
 }
-
-h5 {
+#ocw-container h5 {
   font-size: 13.28px;
 }
-
-h6 {
+#ocw-container h6 {
   font-size: 10.72px;
 }
-
-a, p, button, label, input {
+#ocw-container a, #ocw-container p, #ocw-container button, #ocw-container label, #ocw-container input {
   font-family: "Lucas", Helvetica, sans-serif;
   font-weight: normal;
   font-size: 17px;
