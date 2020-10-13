@@ -192,10 +192,16 @@
           <div class="grid">
             <div class="item-grid">
               <!-- Nuevo Box de Video -->
-              <div class="picture">
-                <img src="./images/encuentros_reskilling.jpg" alt="">
-              </div>
+              <div class="videoWrapper picture js-videoWrapper">
 
+                <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/WPRvsASEmkA?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+                <button class="videoPoster js-videoPoster"
+                  style="background-image: url('https://www.nespresso.com/ecom/medias/sys_master/public/13651377913886/encuentros-reskilling.jpg?');">Play
+                  video</button>
+              </div>
+             
               <div class="text">
                 <div class="content">
                   <div class="titulo">
@@ -205,15 +211,41 @@
                   </div>
                   <p><strong>Los avances tecnológicos</strong> afectarán inevitablemente la capacidad de las empresas para construir y
                     mantener una fuerza laboral calificada.<br> Los empleadores deberán preparar a sus colaboradores para
-                    adaptarse y <strong>prosperar en el futuro del trabajo</strong> .
+                    adaptarse y <strong>prosperar en el futuro del trabajo</strong>.
                   </p>
                   <p> Los líderes que estaban muy listos ayer,<br> <strong>¿están preparados hoy? ¿Lo estarán mañana? </strong>
                   </p>
-
+                  <button data-evento="skill" data-content="info" class="down open-dialog"
+                    aria-label="Ver infografía">Ver infografía</button>
                  
                 </div>
 
               </div>
+
+              
+            </div>
+            <div class="item-grid">
+              <div class="picture">
+                <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13651370082334/costantini.jpg?"
+                  alt="">
+              </div>
+              <div class="text">
+                <div class="content cita">
+                  <div class="titulo">
+                    <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13569948352542/icon-cup.svg?"
+                      alt="">
+                    <h3 class="quote">"La clave es reconocer que uno nunca es sino que uno siempre está."</h3>
+                  </div>
+
+                  <button data-evento="skill" data-content="podcast" class="speak open-dialog"
+                    aria-label="Escuchá el Podcast">Escuchá el Podcast</button>
+                  
+                  <!-- <button data-evento="skill" data-content="paper" class="down open-dialog"
+                    aria-label="Descargá el Paper">Descargá el
+                    Paper</button> -->
+                </div>
+              </div>
+
             </div>
             
           </div>

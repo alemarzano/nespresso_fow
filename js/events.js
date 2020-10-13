@@ -81,7 +81,7 @@ $(document).ready(function () {
       link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/893804278&color=%23b99a62&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
     }, {
       evento: 'skill',
-      link: './media/podcast_.mp3'
+      link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/909864595&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"'
     }, {
       evento: 'future',
       link: './media/podcast_.mp3'
@@ -91,7 +91,7 @@ $(document).ready(function () {
       link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13600473481246/infografia-inteligencia.jpg?'
     }, {
       evento: 'skill',
-      link: './media/'
+      link: './media/infografia_reskilling.jpg'
     }, {
       evento: 'future',
       link: './media/'
@@ -291,37 +291,37 @@ $(document).ready(function () {
   /**** QUOTES ******/
   var owlInv = $('#owl-inv');
   var citas = [{
-      "quote": "La clave es el <strong>propósito</strong> que hay detrás de todo lo que se haga. Sin un propósito es más difícil sostener la <strong>motivación</strong> de las personas.",
+      "quote": "La clave es el <strong>propÃ³sito</strong> que hay detrÃ¡s de todo lo que se haga. Sin un propÃ³sito es mÃ¡s difÃ­cil sostener la <strong>motivaciÃ³n</strong> de las personas.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367723038/quote-natura.jpg?",
       "nombre": "Carolina Vincenzini",
       "puesto": "Gerente RRHH",
       "empresa": "Natura"
     },
     {
-      "quote": "El primer desafío es convencernos de que los <strong>equipos colaborativos</strong> pueden tener una efectividad mayor.",
+      "quote": "El primer desafÃ­o es convencernos de que los <strong>equipos colaborativos</strong> pueden tener una efectividad mayor.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651366936606/quote-bayer.jpg?",
       "nombre": "Paula Curtale ",
       "puesto": "Directora RRHH",
       "empresa": "Bayer"
     },
     {
-      "quote": "El desafío es desarrollar la capacidad de adaptarnos al <strong>futuro</strong> teniendo en cuenta las <strong>exigencias del presente</strong>.",
+      "quote": "El desafÃ­o es desarrollar la capacidad de adaptarnos al <strong>futuro</strong> teniendo en cuenta las <strong>exigencias del presente</strong>.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368378398/quote-toyota.jpg?",
-      "nombre": "Andrés Massuh",
+      "nombre": "AndrÃ©s Massuh",
       "puesto": "Director RRHH",
       "empresa": "Toyota"
     },
     {
-      "quote": "Tenemos que desarrollar a nuestros talentos en la <strong>empatía</strong> y la <strong>colaboración</strong>.",
+      "quote": "Tenemos que desarrollar a nuestros talentos en la <strong>empatÃ­a</strong> y la <strong>colaboraciÃ³n</strong>.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367526430/quote-disney.jpg?",
       "nombre": "Mercedes De Belaustegui",
       "puesto": "VP RRHH",
       "empresa": "Disney"
     },
     {
-      "quote": "La clave de la transformación es formar organizaciones <strong>ágiles, dinámicas y vivas</strong>.",
+      "quote": "La clave de la transformaciÃ³n es formar organizaciones <strong>Ã¡giles, dinÃ¡micas y vivas</strong>.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367657502/quote-galicia.jpg?",
-      "nombre": "Rafael Bergés",
+      "nombre": "Rafael BergÃ©s",
       "puesto": "Gerente de Personas",
       "empresa": "Banco Galicia"
     },
@@ -333,32 +333,32 @@ $(document).ready(function () {
       "empresa": "Oracle"
     },
     {
-      "quote": "Lo importante es generar entornos para que la <strong>creatividad</strong> exista pero para que también se transforme en una <strong>acción concreta</strong>.",
+      "quote": "Lo importante es generar entornos para que la <strong>creatividad</strong> exista pero para que tambiÃ©n se transforme en una <strong>acciÃ³n concreta</strong>.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651366805534/quote-accenture.jpg?",
-      "nombre": "Gastón Podestá",
+      "nombre": "GastÃ³n PodestÃ¡",
       "puesto": "Director RRHH",
       "empresa": "Accenture"
     },
     {
-      "quote": "Nuestro compromiso es atraer talentos y eso se logra con <strong>innovación, buen ambiente laboral y desafíos profesionales</strong>.",
+      "quote": "Nuestro compromiso es atraer talentos y eso se logra con <strong>innovaciÃ³n, buen ambiente laboral y desafÃ­os profesionales</strong>.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368312862/quote-salesforce.jpg?",
       "nombre": "Guido Ipszman",
       "puesto": "CEO",
       "empresa": "Salesforce"
     },
     {
-      "quote": "Creo que las organizaciones tienen que tener una <strong>cultura</strong> fuerte, <strong>valores</strong> compartidos y <strong>líderes</strong> bien plantados.",
+      "quote": "Creo que las organizaciones tienen que tener una <strong>cultura</strong> fuerte, <strong>valores</strong> compartidos y <strong>lÃ­deres</strong> bien plantados.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368181790/quote-pae.jpg?",
       "nombre": "Romina Cavanna ",
       "puesto": "VP RRHH",
       "empresa": "Pan American Energy"
     },
     {
-      "quote": "Lo importante es entender no sólo cómo <strong>colaboramos</strong> con nuestras personas sino también cómo <strong>trabajamos y aprendemos</strong> con el afuera.",
+      "quote": "Lo importante es entender no sÃ³lo cÃ³mo <strong>colaboramos</strong> con nuestras personas sino tambiÃ©n cÃ³mo <strong>trabajamos y aprendemos</strong> con el afuera.",
       "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367788574/quote-nestle.jpg?",
-      "nombre": "María Fernanda Amado",
+      "nombre": "MarÃ­a Fernanda Amado",
       "puesto": "Directora RRHH",
-      "empresa": "Nestlé"
+      "empresa": "NestlÃ©"
     }
   ]
 
@@ -391,7 +391,7 @@ $(document).ready(function () {
       dots: false,
       items: 1,
       autoplay: true,
-      autoplayTimeout: 400,
+      autoplayTimeout: 4000,
       autoplayHoverPause: true,
       responsive: {
         767: {
