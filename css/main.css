@@ -968,6 +968,10 @@ form button {
     flex-direction: row-reverse;
   }
 
+  .dialog-form#dialog-steps {
+    min-width: 440px;
+  }
+
   .ui-dialog .ui-dialog-titlebar {
     height: 122px;
   }

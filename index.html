@@ -12,13 +12,13 @@
     integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://www.nespresso.com/ecom/medias/sys_master/public/13569793359902/jquery-ui.css?">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://www.nespresso.com/ecom/medias/sys_master/public/13569793753118/animate.css?">
 
   <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13569947664414/jquery.js"></script>
   <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13569947926558/owl-carousel.js"></script>
-  <script src="./js/angularjs.js"></script>
-  <script src="./js/app.js"></script>
+  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13569935507486/angularjs.js"></script>
+  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13651370311710/appv3.js"></script>
 </head>
 
 <body>
@@ -154,8 +154,8 @@
                   <p> <strong>¿Cómo potenciar el poder de las capacidades humanas en este nuevo auge digital?</strong>
                   </p>
 
-                  <button data-evento="inteligencia" data-content="info" class="down open-dialog"
-                    aria-label="Ver infografía">Ver infografía</button>
+					  <button id="verinfografia_inteligencia" data-evento="inteligencia" data-content="info" class="down open-dialog"
+						aria-label="Ver infografía">Ver infografía</button>
                 </div>
 
               </div>
@@ -174,10 +174,10 @@
                       una posibilidad nueva, una salida que no fue pensada."</h3>
                   </div>
 
-                  <button data-evento="inteligencia" data-content="podcast" class="speak open-dialog"
+                  <button id="escucharpodcast_manes" data-evento="inteligencia" data-content="podcast" class="speak open-dialog"
                     aria-label="Escuchá el Podcast">Escuchá el Podcast</button>
                   
-                  <button data-evento="inteligencia" data-content="paper" class="down open-dialog"
+                  <button id="descargarpaper_manes" data-evento="inteligencia" data-content="paper" class="down open-dialog"
                     aria-label="Descargá el Paper">Descargá el
                     Paper</button>
                 </div>
@@ -214,7 +214,7 @@
                   </p>
                   <p> Los líderes que estaban muy listos ayer,<br> <strong>¿están preparados hoy? ¿Lo estarán mañana? </strong>
                   </p>
-                  <button data-evento="skill" data-content="info" class="down open-dialog"
+                  <button id="verinfografia_upskilling" data-evento="skill" data-content="info" class="down open-dialog"
                     aria-label="Ver infografía">Ver infografía</button>
                  
                 </div>
@@ -225,7 +225,7 @@
             </div>
             <div class="item-grid">
               <div class="picture">
-                <img src="images/encuentros_costantini.jpg"
+                <img src="./images/encuentros_costantini.jpg?"
                   alt="">
               </div>
               <div class="text">
@@ -236,7 +236,7 @@
                     <h3 class="quote">"La clave es reconocer que uno nunca es sino que uno siempre está."</h3>
                   </div>
 
-                  <button data-evento="skill" data-content="podcast" class="speak open-dialog"
+                  <button id="escucharpodcast_costantini" data-evento="skill" data-content="podcast" class="speak open-dialog"
                     aria-label="Escuchá el Podcast">Escuchá el Podcast</button>
                   
                   <!-- <button data-evento="skill" data-content="paper" class="down open-dialog"
@@ -254,7 +254,7 @@
         <div class="dialog-form" id="dialog-steps">
           <!-- multistep form -->
           <form action="https://www.nespresso.com/ebm/index.php" method="POST" id="form2">
-            <input type="hidden" name="to[]" value="promosecommerce@nespresso.com" />
+            <input type="hidden" name="to[]" value="nespresso@ofidirect.com" />
             <input type="hidden" name="market" value="AR" />
             <input type="hidden" name="campaign" value="Open Coffee Work" />
             <!-- progressbar -->
@@ -291,31 +291,36 @@
                 <div class="background"></div>
                 <div class="formulario">
 
-                  <div class="campo">
+                 <div class="campo">
                     <label for="name">Nombre</label>
-                    <input type="text" name="NAME" placeholder="" id="mce-NOMBRE" required="">
+                    <input type="text" name="NAME" placeholder="" id="mce-NOMBRE" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" >
                   </div>
                   <div class="campo">
                     <label for="lname">Apellido</label>
-                    <input type="text" name="SURNAME" placeholder="" id="mce-APELLIDO" required="">
+                    <input type="text" name="SURNAME" placeholder="" id="mce-APELLIDO" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" >
                   </div>
                   <div class="campo">
                     <label for="lname">Teléfono</label>
-                    <input type="text" name="Telefono" placeholder="" id="mce-TELEFONO">
+                    <input type="text" name="Telefono" placeholder="" id="mce-TELEFONO" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" >
                   </div>
                   <div class="campo">
                     <label for="lname">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                       name="EMAIL" placeholder="" id="mce-EMAIL" required
-                      oninvalid="this.setCustomValidity('Por favor ingresá un email correcto')">
+                  oninvalid="this.setCustomValidity('Por favor ingresá un email correcto')" oninput="this.setCustomValidity('')" >
                   </div>
                   <div class="campo">
                     <label for="empresa">Empresa</label>
-                    <input type="text" name="EMPRESA" placeholder="" id="mce-Empresa" required="">
+                    <input type="text" name="EMPRESA" placeholder="" id="mce-Empresa" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" >
                   </div>
                   <div class="campo">
                     <label for="comments">Comentarios</label>
-                    <input type="text" cols="30" rows="4" name="COMENTARIO" placeholder="" id="mce-Comentarios"></input>
+                    <input type="text" cols="30" rows="4" name="COMENTARIO" placeholder="" id="mce-Comentarios" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" ></input>
                   </div>
                   <h4 class="aviso">Si ya completaste el formulario con tus datos solicitando el material, no hace falta
                     volverlo
@@ -354,36 +359,41 @@
         <div class="form">
           <div class="background"></div>
           <div class="formulario">
-            <form action="https://www.nespresso.com/ebm/index.php" method="POST" id="form">
-              <input type="hidden" name="to[]" value="promosecommerce@nespresso.com" />
+             <form action="https://www.nespresso.com/ebm/index.php" method="POST" id="form">
+              <input type="hidden" name="to[]" value="nespresso@ofidirect.com" />
               <input type="hidden" name="market" value="AR" />
               <input type="hidden" name="campaign" value="Open Coffee Work" />
               <div class="campo">
-                <label for="name">Nombre</label>
-                <input type="text" name="NAME" placeholder="" id="mce-NOMBRE" required="">
-              </div>
-              <div class="campo">
-                <label for="lname">Apellido</label>
-                <input type="text" name="SURNAME" placeholder="" id="mce-APELLIDO" required="">
-              </div>
-              <div class="campo">
-                <label for="lname">Teléfono</label>
-                <input type="text" name="Telefono" placeholder="" id="mce-TELEFONO">
-              </div>
-              <div class="campo">
-                <label for="lname">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  name="EMAIL" placeholder="" id="mce-EMAIL" required
-                  oninvalid="this.setCustomValidity('Por favor ingresá un email correcto')">
-              </div>
-              <div class="campo">
-                <label for="empresa">Empresa</label>
-                <input type="text" name="EMPRESA" placeholder="" id="mce-Empresa" required="">
-              </div>
-              <div class="campo">
-                <label for="comments">Comentarios</label>
-                <input type="text" cols="30" rows="4" name="COMENTARIO" placeholder="" id="mce-Comentarios"></input>
-              </div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="NAME" placeholder="" id="mce-NOMBRE" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" >
+                  </div>
+                  <div class="campo">
+                    <label for="lname">Apellido</label>
+                    <input type="text" name="SURNAME" placeholder="" id="mce-APELLIDO" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" >
+                  </div>
+                  <div class="campo">
+                    <label for="lname">Teléfono</label>
+                    <input type="text" name="Telefono" placeholder="" id="mce-TELEFONO" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" >
+                  </div>
+                  <div class="campo">
+                    <label for="lname">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      name="EMAIL" placeholder="" id="mce-EMAIL" required
+                  oninvalid="this.setCustomValidity('Por favor ingresá un email correcto')" oninput="this.setCustomValidity('')" >
+                  </div>
+                  <div class="campo">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" name="EMPRESA" placeholder="" id="mce-Empresa" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" >
+                  </div>
+                  <div class="campo">
+                    <label for="comments">Comentarios</label>
+                    <input type="text" cols="30" rows="4" name="COMENTARIO" placeholder="" id="mce-Comentarios" required
+                  oninvalid="this.setCustomValidity('Campo obligatorio')" oninput="this.setCustomValidity('')" ></input>
+                  </div>
               <h4 class="aviso">Si ya completaste el formulario con tus datos solicitando el material, no hace falta
                 volverlo
                 a hacer.</h4>
@@ -400,7 +410,7 @@
 
   </div>
 
-  <script src="./js/events.js"></script>
+  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13699920363550/eventsV9.js"></script>
 
   <script>
     "use strict";
@@ -480,7 +490,7 @@
     });
   </script>
   <!-- JS -->
-  <script>
+   <script>
     $("#form").submit(function (event) {
       event.preventDefault();
       gtmDataObject.push({
@@ -492,14 +502,14 @@
       $.post($(this).attr("action"), $("#form").serialize())
         .done(function (data) {
           /*if (data==1) {alert("ok");} else {alert( "second success "+data);}*/
-          window.location = 'https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional';
+          window.location = 'https://www.nespresso.com/pro/ar/es/open-coffee-work-nespresso-professional';
         })
         .fail(function (data) {
           console.log("error " + data);
         })
         .always(function () {
           alert("Gracias por registrarse. Serás contactado a la brevedad.");
-          window.location = 'https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional';
+          window.location = 'https://www.nespresso.com/pro/ar/es/open-coffee-work-nespresso-professional';
         });
     });
   </script>
@@ -516,17 +526,69 @@
       $.post($(this).attr("action"), $("#form2").serialize())
         .done(function (data) {
           /*if (data==1) {alert("ok");} else {alert( "second success "+data);}*/
-          window.location = 'https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional';
+          window.location = 'https://www.nespresso.com/pro/ar/es/open-coffee-work-nespresso-professional';
         })
         .fail(function (data) {
           console.log("error " + data);
         })
         .always(function () {
           alert("Gracias por registrarse. Serás contactado a la brevedad.");
-          window.location = 'https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional';
+          window.location = 'https://www.nespresso.com/pro/ar/es/open-coffee-work-nespresso-professional';
         });
     });
   </script>
+   <script>
+    $("#verinfografia_inteligencia").submit(function (event) {
+      event.preventDefault();
+      gtmDataObject.push({
+        'event': 'customEvent', //This is required here
+        'eventCategory': 'User Engagement', //This is required and critical
+        'eventAction': 'Click Ver Infografia Inteligencia', //This is required and critical, name of the action
+        'eventLabel': 'Ver Infografia Inteligencia', // Put here any description of the action in order to identify this event in GA
+      });
+	</script>
+	   <script>
+    $("#verinfografia_upskilling").submit(function (event) {
+      event.preventDefault();
+      gtmDataObject.push({
+        'event': 'customEvent', //This is required here
+        'eventCategory': 'User Engagement', //This is required and critical
+        'eventAction': 'Click Ver Infografia Upskilling', //This is required and critical, name of the action
+        'eventLabel': 'Ver Infografia Upskilling', // Put here any description of the action in order to identify this event in GA
+      });
+	</script>
+		   <script>
+    $("#escucharpodcast_manes").submit(function (event) {
+      event.preventDefault();
+      gtmDataObject.push({
+        'event': 'customEvent', //This is required here
+        'eventCategory': 'User Engagement', //This is required and critical
+        'eventAction': 'Click Escuchar Podcast Manes', //This is required and critical, name of the action
+        'eventLabel': 'Escuchar Podcast Manes', // Put here any description of the action in order to identify this event in GA
+      });
+	</script>
+		   <script>
+    $("#descargarpaper_manes").submit(function (event) {
+      event.preventDefault();
+      gtmDataObject.push({
+        'event': 'customEvent', //This is required here
+        'eventCategory': 'User Engagement', //This is required and critical
+        'eventAction': 'Click Descargar Paper Manes', //This is required and critical, name of the action
+        'eventLabel': 'Descargar Paper Manes', // Put here any description of the action in order to identify this event in GA
+      });
+	</script>
+			   <script>
+    $("#escucharpodcast_costantini").submit(function (event) {
+      event.preventDefault();
+      gtmDataObject.push({
+        'event': 'customEvent', //This is required here
+        'eventCategory': 'User Engagement', //This is required and critical
+        'eventAction': 'Click Escuchar Podcast Costantini', //This is required and critical, name of the action
+        'eventLabel': 'Escuchar Podcast Costantini', // Put here any description of the action in order to identify this event in GA
+      });
+	</script>
+	
+	
 </body>
 
 </html>
