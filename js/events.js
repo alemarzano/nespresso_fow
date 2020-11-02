@@ -5,12 +5,7 @@ var overlay = $("#overlay");
 var menuLinks = $('#menulinks');
 
 function openNav() {
-  // document.getElementById("menulinks").style.width = "250px";
-  // document.querySelector('body').style.overflow = "hidden"
-  // overlay.style.opacity = '.7'
-  // overlay.style.height = '100vh'
-  // icon.setAttribute('onclick', 'closeNav()');
-  // icon.innerHTML = "<img src='images/close.svg' alt=''>";
+
   $(menuLinks).css({
     'width': '250px',
     'top': '52px'
@@ -24,12 +19,7 @@ function openNav() {
 }
 
 function closeNav() {
-  // document.getElementById("menulinks").style.width = "0";
-  // document.querySelector('body').style.overflow = "inherit"
-  // overlay.style.opacity = '0';
-  // overlay.style.height = '0'
-  // icon.setAttribute('onclick', 'openNav()');
-  // icon.innerHTML = "<img src='images/menu.svg' alt=''>";
+
   $(menuLinks).css({
     'width': '0'
   });
@@ -76,6 +66,7 @@ $(document).ready(function () {
   $(botonModal).on("click", function () {
     var content = $(this).data('content');
     var tab = $(this).data('evento');
+
     var podcasts = [{
       evento: 'inteligencia',
       link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/893804278&color=%23b99a62&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
@@ -86,26 +77,29 @@ $(document).ready(function () {
       evento: 'future',
       link: './media/podcast_.mp3'
     }];
+
     var infos = [{
       evento: 'inteligencia',
       link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13600473481246/infografia-inteligencia.jpg?'
     }, {
       evento: 'skill',
-      link: './media/infografia_reskilling.jpg'
+      link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13699919478814/infografia-reskilling.jpg?'
     }, {
       evento: 'future',
       link: './media/'
     }];
+
     var papers = [{
       evento: 'inteligencia',
       link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13651366346782/paper-inteligencia.jpg?'
     }, {
       evento: 'skill',
-      link: './media/.jpg'
+      link: './media/paper-skill.jpg'
     }, {
       evento: 'future',
       link: './media/.jpg'
     }];
+
     var imagen = '';
 
     switch (content) {
@@ -291,84 +285,194 @@ $(document).ready(function () {
   /**** QUOTES ******/
   var owlInv = $('#owl-inv');
   var citas = [{
-    "quote": "La clave es el <strong>propósito</strong> que hay detrás de todo lo que se haga. Sin un propósito es más difícil sostener la <strong>motivación</strong> de las personas.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367723038/quote-natura.jpg?",
-    "nombre": "Carolina Vincenzini",
-    "puesto": "Gerente RRHH",
-    "empresa": "Natura"
-  },
-  {
-    "quote": "El primer desafío es convencernos de que los <strong>equipos colaborativos</strong> pueden tener una efectividad mayor.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651366936606/quote-bayer.jpg?",
-    "nombre": "Paula Curtale ",
-    "puesto": "Directora RRHH",
-    "empresa": "Bayer"
-  },
-  {
-    "quote": "El desafío es desarrollar la capacidad de adaptarnos al <strong>futuro</strong> teniendo en cuenta las <strong>exigencias del presente</strong>.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368378398/quote-toyota.jpg?",
-    "nombre": "Andrés Massuh",
-    "puesto": "Director RRHH",
-    "empresa": "Toyota"
-  },
-  {
-    "quote": "Tenemos que desarrollar a nuestros talentos en la <strong>empatía</strong> y la <strong>colaboración</strong>.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367526430/quote-disney.jpg?",
-    "nombre": "Mercedes De Belaustegui",
-    "puesto": "VP RRHH",
-    "empresa": "Disney"
-  },
-  {
-    "quote": "La clave de la transformación es formar organizaciones <strong>ágiles, dinámicas y vivas</strong>.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367657502/quote-galicia.jpg?",
-    "nombre": "Rafael Bergés",
-    "puesto": "Gerente de Personas",
-    "empresa": "Banco Galicia"
-  },
-  {
-    "quote": "Tenemos que generar <strong>experiencias relevantes y significativas</strong> para que la gente sienta el placer de cambiar.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368017950/quote-oracle.jpg?",
-    "nombre": "Carolina Florez",
-    "puesto": "VP Global Women in Tech",
-    "empresa": "Oracle"
-  },
-  {
-    "quote": "Lo importante es generar entornos para que la <strong>creatividad</strong> exista pero para que también se transforme en una <strong>acción concreta</strong>.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651366805534/quote-accenture.jpg?",
-    "nombre": "Gastón Podestá",
-    "puesto": "Director RRHH",
-    "empresa": "Accenture"
-  },
-  {
-    "quote": "Nuestro compromiso es atraer talentos y eso se logra con <strong>innovación, buen ambiente laboral y desafíos profesionales</strong>.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368312862/quote-salesforce.jpg?",
-    "nombre": "Guido Ipszman",
-    "puesto": "CEO",
-    "empresa": "Salesforce"
-  },
-  {
-    "quote": "Creo que las organizaciones tienen que tener una <strong>cultura</strong> fuerte, <strong>valores</strong> compartidos y <strong>líderes</strong> bien plantados.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651368181790/quote-pae.jpg?",
-    "nombre": "Romina Cavanna ",
-    "puesto": "VP RRHH",
-    "empresa": "Pan American Energy"
-  },
-  {
-    "quote": "Lo importante es entender no sólo cómo <strong>colaboramos</strong> con nuestras personas sino también cómo <strong>trabajamos y aprendemos</strong> con el afuera.",
-    "foto": "https://www.nespresso.com/ecom/medias/sys_master/public/13651367788574/quote-nestle.jpg?",
-    "nombre": "María Fernanda Amado",
-    "puesto": "Directora RRHH",
-    "empresa": "Nestlé"
-  }
-]
+      evento: 'inteligencia',
+      quote: "La clave es el <strong>propósito</strong> que hay detrás de todo lo que se haga. Sin un propósito es más difícil sostener la <strong>motivación</strong> de las personas.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651367723038/quote-natura.jpg?",
+      nombre: "Carolina Vincenzini",
+      puesto: "Gerente RRHH",
+      empresa: "Natura"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "El primer desafío es convencernos de que los <strong>equipos colaborativos</strong> pueden tener una efectividad mayor.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651366936606/quote-bayer.jpg?",
+      nombre: "Paula Curtale ",
+      puesto: "Directora RRHH",
+      empresa: "Bayer"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "El desafío es desarrollar la capacidad de adaptarnos al <strong>futuro</strong> teniendo en cuenta las <strong>exigencias del presente</strong>.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651368378398/quote-toyota.jpg?",
+      nombre: "Andrés Massuh",
+      puesto: "Director RRHH",
+      empresa: "Toyota"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "Tenemos que desarrollar a nuestros talentos en la <strong>empatía</strong> y la <strong>colaboración</strong>.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651367526430/quote-disney.jpg?",
+      nombre: "Mercedes De Belaustegui",
+      puesto: "VP RRHH",
+      empresa: "Disney"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "La clave de la transformación es formar organizaciones <strong>ágiles, dinámicas y vivas</strong>.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651367657502/quote-galicia.jpg?",
+      nombre: "Rafael Bergés",
+      puesto: "Gerente de Personas",
+      empresa: "Banco Galicia"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "Tenemos que generar <strong>experiencias relevantes y significativas</strong> para que la gente sienta el placer de cambiar.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651368017950/quote-oracle.jpg?",
+      nombre: "Carolina Florez",
+      puesto: "VP Global Women in Tech",
+      empresa: "Oracle"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "Lo importante es generar entornos para que la <strong>creatividad</strong> exista pero para que también se transforme en una <strong>acción concreta</strong>.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651366805534/quote-accenture.jpg?",
+      nombre: "Gastón Podestá",
+      puesto: "Director RRHH",
+      empresa: "Accenture"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "Nuestro compromiso es atraer talentos y eso se logra con <strong>innovación, buen ambiente laboral y desafíos profesionales</strong>.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651368312862/quote-salesforce.jpg?",
+      nombre: "Guido Ipszman",
+      puesto: "CEO",
+      empresa: "Salesforce"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "Creo que las organizaciones tienen que tener una <strong>cultura</strong> fuerte, <strong>valores</strong> compartidos y <strong>líderes</strong> bien plantados.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651368181790/quote-pae.jpg?",
+      nombre: "Romina Cavanna ",
+      puesto: "VP RRHH",
+      empresa: "Pan American Energy"
+    },
+    {
+      evento: 'inteligencia',
+      quote: "Lo importante es entender no sólo cómo <strong>colaboramos</strong> con nuestras personas sino también cómo <strong>trabajamos y aprendemos</strong> con el afuera.",
+      foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651367788574/quote-nestle.jpg?",
+      nombre: "María Fernanda Amado",
+      puesto: "Directora RRHH",
+      empresa: "Nestlé"
+    },
+    {
+      evento:'skill',
+      quote:'El desafío más importante es aprender a desaprender lo que uno viene haciendo hace mucho tiempo.',
+      foto:'./images/quotes/upskilling/quotes_dugarte.jpg',
+      nombre:'Marianella Dugarte',
+      puesto:'Southern Cone People & Organization Head',
+      empresa:'Novartis'
+    },
+    {
+      evento:'skill',
+      quote:'Tiene que haber un propósito inspirador para que la gente tenga ganas de aprender cosas nuevas como parte de la construcción de un todo distinto.',
+      foto:'./images/quotes/upskilling/quotes_aggio.jpg',
+      nombre:'José Manuel Aggio',
+      puesto:'Vice Presidente RRHH',
+      empresa:'YPF'
+    },
+    {
+      evento:'skill',
+      quote:'Es clave la incorporación de mentalidades distintas, aquellas que generan disrupción.',
+      foto:'./images/quotes/upskilling/quotes_gabrielloni.jpg',
+      nombre:'Natalia Gabrielloni',
+      puesto:'Gerente Corporativo de Gestión Humana',
+      empresa:'Falabella'
+    },
+    {
+      evento:'skill',
+      quote:'Un gran desafío es cómo reconvertimos y formamos en habilidades digitales a aquellas posiciones que van a tender a desaparecer.',
+      foto:'./images/quotes/upskilling/quotes_ibero.jpg',
+      nombre:'Mariana Ibero',
+      puesto:'Directora de Capital Humano',
+      empresa:'Farmacity'
+    },
+    {
+      evento:'skill',
+      quote:'Hay que hacer un ejercicio de mirar para adentro, mirar a los costados y ver dónde está el error para poder ser mejores y evolucionar.',
+      foto:'./images/quotes/upskilling/quotes_quinones.jpg',
+      nombre:'Constanza Quiñones',
+      puesto:'Directora de RRHH',
+      empresa:'SAP'
+    },
+    {
+      evento:'skill',
+      quote:'El primer paso para poder aprender es reconocerse uno mismo.',
+      foto:'./images/quotes/upskilling/quotes_cao.jpg',
+      nombre:'Melina Cao',
+      puesto:'Directora de RRHH Cono Sur',
+      empresa:'Unilever'
+    },
+    {
+      evento:'skill',
+      quote:'Uno mismo es responsable de gestionar su propio crecimiento.',
+      foto:'./images/quotes/upskilling/quotes_cura.jpg',
+      nombre:'Ines Cura',
+      puesto:'COO Argentina Uruguay Paraguay',
+      empresa:'IBM'
+    },
+    {
+      evento:'skill',
+      quote:'A la hora de construir equipos nos basamos en dos pilares: el learning agility de las personas y una cultura de beta continuo.',
+      foto:'./images/quotes/upskilling/quotes_silva.jpg',
+      nombre:'Sebastian Fernandez Silva',
+      puesto:'Chief People Officer',
+      empresa:'Mercado Libre'
+    },
+    {
+      evento:'skill',
+      quote:'El líder tiene un rol clave, es quien modela e impulsa la cultura.',
+      foto:'./images/quotes/upskilling/quotes_petrasso.jpg',
+      nombre:'Etel Petrasso',
+      puesto:'Gerente de Cultura',
+      empresa:'Nestlé'
+    },
+    {
+      evento:'skill',
+      quote:'Diversidad significa también generar herramientas de aprendizaje para distintos estilos de aprendizaje.',
+      foto:'./images/quotes/upskilling/quotes_vatausky.jpg',
+      nombre:'Veronica Vatausky',
+      puesto:'Directora de RRHH',
+      empresa:'L&#39;oréal'
+    }
+  ]
 
+  var tabcontent = $('.tabcontent');
+  tabcontent[0].style.display = "block";
+  listarQuotes('inteligencia')
+  $('.tablinks').on('click', function () {
+    var buttonID = $(this).attr('id');
+    listarQuotes(buttonID)
+    $(tabcontent).each(function () {
+      var tabID = $(this).attr('id');
+      $(this).hide();
+      if (tabID == buttonID) {
+        $(this).show()
+      }
+    })
+    $('.tablinks').each(function () {
+      $(this).removeClass('active')
+    })
+    $(this).addClass('active');
+  })
 
-  function listarQuotes() {
+  function listarQuotes(tabEvent) {
     var listado = '';
-    for (let unaCita = 0; unaCita <citas.length; unaCita++) {
+    owlInv.empty();
+    owlInv.trigger('destroy.owl.carousel')
+    for (let unaCita = 0; unaCita < citas.length; unaCita++) {
       var autor = citas[unaCita];
-
-      listado += `
+      if (autor.evento == tabEvent) {
+        listado += `
       <div class="item ">
         <img class="logo" src="https://www.nespresso.com/ecom/medias/sys_master/public/13570075426846/opencoffework.png?" alt="logo open coffee work">
         <h3>"${autor.quote}"</h3>
@@ -379,8 +483,12 @@ $(document).ready(function () {
             <p>${autor.puesto} - ${autor.empresa}</p>
           </div>
         </div>
-      </div>
-      `
+      </div>`
+      }else if (tabEvent === 'future') {
+        let titulo = document.querySelector('#invitados').previousElementSibling
+        titulo.innerHTML = '';
+      }
+
     }
     owlInv.append(listado)
 
@@ -402,6 +510,6 @@ $(document).ready(function () {
       }
     });
   }
-  listarQuotes()
+
 
 });
