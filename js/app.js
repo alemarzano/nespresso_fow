@@ -24,14 +24,14 @@ app.controller('oradoresCtrlr', function ($scope) {
   {
     id:'02',
     nombre:'Javier Bajer',
-    foto:'./images/bajer.jpg',
+    foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751076880414/bajer.jpg?',
     rol:'Speaker',
-    descripcion:'Definido por el periódico <em>The Guardian</em> como ‘Arquitecto Cultural’, con una maestría en Neurociencias y un Doctorado en Cognición Social, Javier trabaja con empresas globales y gobiernos para ayudarlos a acelerar cambios en sus culturas y poder ver los resultados de sus estrategias. Javier es <em>keynote speaker international</em> basado en Londres. En 2019 fue reconocido en la portada de La Nación Revista como uno de los argentinos influyentes en el exterior.'
+    descripcion:'Definido por el periódico The Guardian como ‘Arquitecto Cultural’, con una maestría en Neurociencias y un Doctorado en Cognición Social, Javier trabaja con empresas globales y gobiernos para ayudarlos a acelerar cambios en sus culturas y poder ver los resultados de sus estrategias. Javier es keynote speaker international basado en Londres. En 2019 fue reconocido en la portada de La Nación Revista como uno de los argentinos influyentes en el exterior.'
   },
     {
     id: "03",
     nombre: "Isela Costantini",
-    foto: "./images/costantini.jpg",
+    foto: "https://www.nespresso.com/ecom/medias/sys_master/public/13651370082334/costantini.jpg?",
     rol: "Speaker",
     descripcion: "Comunicadora Social. Fue Presidente en GM para Argentina, Uruguay y Paraguay, en Aerolíneas Argentinas y desde el 2017 es Presidente de la holding financiera GST. Reconocida como CEO del Año por la Revista Apertura y PwC. Recibió el premio Merco de reputación empresarial, CEO del año por Ernst & Young y premio Konex por Líderes de Industria."
   }, {

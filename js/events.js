@@ -94,7 +94,7 @@ $(document).ready(function () {
       link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13651366346782/paper-inteligencia.jpg?'
     }, {
       evento: 'skill',
-      link: './media/paper-skill.jpg'
+      link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13751079436318/paper-skill.jpg?'
     }, {
       evento: 'future',
       link: './media/.jpg'
@@ -170,7 +170,7 @@ $(document).ready(function () {
   }
 
   function thankYou() {
-    window.location.href = "https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional"; //window.open('https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional')
+    window.location.href = "https://www.nespresso.com/pro/ar/es/open-coffee-work-nespresso-professional"; //window.open('https://www.nespresso.com/ar/es/open-coffee-work-nespresso-professional')
   }
   /**** POPUP STEPS******/
 
@@ -367,7 +367,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'El desafío más importante es aprender a desaprender lo que uno viene haciendo hace mucho tiempo.',
-      foto:'./images/quotes/upskilling/quotes_dugarte.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751079501854/quotes-dugarte.jpg?',
       nombre:'Marianella Dugarte',
       puesto:'Southern Cone People & Organization Head',
       empresa:'Novartis'
@@ -375,7 +375,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'Tiene que haber un propósito inspirador para que la gente tenga ganas de aprender cosas nuevas como parte de la construcción de un todo distinto.',
-      foto:'./images/quotes/upskilling/quotes_aggio.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751079567390/quotes-aggio.jpg?',
       nombre:'José Manuel Aggio',
       puesto:'Vice Presidente RRHH',
       empresa:'YPF'
@@ -383,7 +383,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'Es clave la incorporación de mentalidades distintas, aquellas que generan disrupción.',
-      foto:'./images/quotes/upskilling/quotes_gabrielloni.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751079632926/quotes-gabrielloni.jpg?',
       nombre:'Natalia Gabrielloni',
       puesto:'Gerente Corporativo de Gestión Humana',
       empresa:'Falabella'
@@ -391,7 +391,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'Un gran desafío es cómo reconvertimos y formamos en habilidades digitales a aquellas posiciones que van a tender a desaparecer.',
-      foto:'./images/quotes/upskilling/quotes_ibero.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751079698462/quotes-ibero.jpg?',
       nombre:'Mariana Ibero',
       puesto:'Directora de Capital Humano',
       empresa:'Farmacity'
@@ -399,7 +399,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'Hay que hacer un ejercicio de mirar para adentro, mirar a los costados y ver dónde está el error para poder ser mejores y evolucionar.',
-      foto:'./images/quotes/upskilling/quotes_quinones.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751079927838/quotes-quinones.jpg?',
       nombre:'Constanza Quiñones',
       puesto:'Directora de RRHH',
       empresa:'SAP'
@@ -407,7 +407,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'El primer paso para poder aprender es reconocerse uno mismo.',
-      foto:'./images/quotes/upskilling/quotes_cao.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751080353822/quotes-cao.jpg?',
       nombre:'Melina Cao',
       puesto:'Directora de RRHH Cono Sur',
       empresa:'Unilever'
@@ -415,7 +415,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'Uno mismo es responsable de gestionar su propio crecimiento.',
-      foto:'./images/quotes/upskilling/quotes_cura.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751080452126/quotes-cura.jpg?',
       nombre:'Ines Cura',
       puesto:'COO Argentina Uruguay Paraguay',
       empresa:'IBM'
@@ -423,7 +423,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'A la hora de construir equipos nos basamos en dos pilares: el learning agility de las personas y una cultura de beta continuo.',
-      foto:'./images/quotes/upskilling/quotes_silva.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751081533470/quotes-silva.jpg?',
       nombre:'Sebastian Fernandez Silva',
       puesto:'Chief People Officer',
       empresa:'Mercado Libre'
@@ -431,7 +431,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'El líder tiene un rol clave, es quien modela e impulsa la cultura.',
-      foto:'./images/quotes/upskilling/quotes_petrasso.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751081599006/quotes-petrasso.jpg?',
       nombre:'Etel Petrasso',
       puesto:'Gerente de Cultura',
       empresa:'Nestlé'
@@ -439,7 +439,7 @@ $(document).ready(function () {
     {
       evento:'skill',
       quote:'Diversidad significa también generar herramientas de aprendizaje para distintos estilos de aprendizaje.',
-      foto:'./images/quotes/upskilling/quotes_vatausky.jpg',
+      foto:'https://www.nespresso.com/ecom/medias/sys_master/public/13751081664542/quotes-vatausky.jpg?',
       nombre:'Veronica Vatausky',
       puesto:'Directora de RRHH',
       empresa:'L&#39;oréal'
