@@ -75,7 +75,7 @@ $(document).ready(function () {
       link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/909864595&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"'
     }, {
       evento: 'future',
-      link: './media/podcast_.mp3'
+      link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/930959860&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
     }];
 
     var infos = [{
@@ -86,7 +86,7 @@ $(document).ready(function () {
       link: 'https://www.nespresso.com/ecom/medias/sys_master/public/13699919478814/infografia-reskilling.jpg?'
     }, {
       evento: 'future',
-      link: './media/'
+      link: './media/infografia_future.jpg'
     }];
 
     var papers = [{
@@ -443,6 +443,78 @@ $(document).ready(function () {
       nombre:'Veronica Vatausky',
       puesto:'Directora de RRHH',
       empresa:'L&#39;oréal'
+    }, 
+    {
+      evento:'future',
+      quote:'El desafío de RRHH es entender cómo podemos ser facilitadores para incentivar el propósito en los líderes.',
+      foto:'./images/quotes/future/quote_kimberly.jpg',
+      nombre:'Martín Pando',
+      puesto:'HR Director South LAO',
+      empresa:'Kimberly Clark'
+    },
+    {
+      evento:'future',
+      quote:'Creemos en líderes que dejen de tener respuestas y hagan preguntas, que dejen de tener al éxito como factor dominante, que sean vulnerables frente al error.',
+      foto:'./images/quotes/future/quote_quilmes.jpg',
+      nombre:'Santos Videla',
+      puesto:'Director de Gente AR & UY',
+      empresa:'Cervecería Quilmes'
+    },
+    {
+      evento:'future',
+      quote:'Las organizaciones tenemos el gran desafío post pandemia de trabajar en la empatía de los líderes.',
+      foto:'./images/quotes/future/quote_companc.jpg',
+      nombre:'Pablo Maison',
+      puesto:'Chief Human Resources Officer',
+      empresa:'Grupo Pérez Companc'
+    },
+    {
+      evento:'future',
+      quote:'Buscamos que cada colaborador pueda ser uno mismo, donde se sienta bien y pueda crecer',
+      foto:'./images/quotes/future/quote_gsk.jpg',
+      nombre:'Juan Martín Cassullo',
+      puesto:'HR Director AR & UY',
+      empresa:'GSK'
+    },
+    {
+      evento:'future',
+      quote:'Tenemos que trabajar en conectar el propósito individual con el propósito de las organizaciones.',
+      foto:'./images/quotes/future/quote_pwc.jpg',
+      nombre:'Pablo Granado',
+      puesto:'Director de Capital Humano',
+      empresa:'PWC'
+    },
+    {
+      evento:'future',
+      quote:'Lo fundamental es que cada una de las personas que trabajamos en una organización nos sintamos identificadas con el propósito.',
+      foto:'./images/quotes/future/quote_santander.jpg',
+      nombre:'Verónica Climent',
+      puesto:'Directora de Gestión de Personas, Costos, Inmuebles y Seguridad',
+      empresa:'Santander Argentina'
+    },
+    {
+      evento:'future',
+      quote:'Estamos trabajando en espacios que reflejen una conexión entre el hogar y la oficina para potenciar los vínculos profesionales y personales.',
+      foto:'./images/quotes/future/quote_microsoft.jpg',
+      nombre:'Silvina Uviz D&#39;Agostino',
+      puesto:'HR Director AR, Enterprise & Public Sector LATAM',
+      empresa:'Microsoft'
+    },
+    {
+      evento:'future',
+      quote:'El desafío es ver cómo generamos nuevas creencias para impulsar la cultura que queremos.',
+      foto:'./images/quotes/future/quote_naranja.jpg',
+      nombre:'Eugenia Patiño',
+      puesto:'Subdirectora de Relaciones Humanas',
+      empresa:'Naranja'
+    },
+    {
+      evento:'future',
+      quote:'Si bien lo virtual vino para quedarse, en la oficina se viven ciertos rituales de la organización donde la cultura se hace mucho más permeable.',
+      foto:'./images/quotes/future/quote_nestle.jpg',
+      nombre:'María Fernanda Amado',
+      puesto:'HR Director Región Plata',
+      empresa:'Nestlé'
     }
   ]
 
@@ -484,9 +556,6 @@ $(document).ready(function () {
           </div>
         </div>
       </div>`
-      }else if (tabEvent === 'future') {
-        let titulo = document.querySelector('#invitados').previousElementSibling
-        titulo.innerHTML = '';
       }
 
     }

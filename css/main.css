@@ -16,6 +16,7 @@
   font-style: normal;
   font-weight: 500;
 }
+
 @font-face {
   font-family: Lucas;
   src: url(/shared_res/agility/commons/fonts/NespressoLucas-SemiBd.woff) format("woff");

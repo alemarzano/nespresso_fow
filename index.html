@@ -12,7 +12,7 @@
     integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://www.nespresso.com/ecom/medias/sys_master/public/13569793359902/jquery-ui.css?">
-  <link rel="stylesheet" href="https://www.nespresso.com/ecom/medias/sys_master/public/13654036250654/mainV11.css?">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://www.nespresso.com/ecom/medias/sys_master/public/13569793753118/animate.css?">
 
   <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13569947664414/jquery.js"></script>
@@ -260,9 +260,14 @@
         <div id='future' class="tabcontent">
           <div class="grid">
             <div class="item-grid">
+              <div class="videoWrapper picture js-videoWrapper">
 
-              <div class="picture">
-                <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13751087923230/encuentros-futuro.jpg?" alt="">
+                <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/WPRvsASEmkA?autoplay=1&modestbranding=1&rel=0&hl=sv&enablejsapi=1"></iframe>
+                <button class="videoPoster js-videoPoster"
+                  style="background-image: url('https://www.nespresso.com/ecom/medias/sys_master/public/13751087923230/encuentros-futuro.jpg?');">Play
+                  video</button>
               </div>
 
               <div class="text">
@@ -274,11 +279,33 @@
                   </div>
                   <p>La revolución de los espacios de trabajo se hace presente. Estos pasarán a ser un ecosistema de diferentes locaciones y experiencias que responderán a las distintas necesidades, funcionalidades y bienestar de los colaboradores.<br>
                     <strong>¿Cuáles son los desafíos que presenta este nuevo escenario?</strong></p>
-                  
+                    <button id="verinfografia_future" data-evento="future" data-content="info" class="down open-dialog"
+                    aria-label="Ver infografía">Ver infografía</button>
                 </div>
 
               </div>
 
+
+            </div>
+            
+            <div class="item-grid">
+              <div class="picture">
+                <img src="./images/encuentros_bajer.jpg" alt="">
+              </div>
+              <div class="text">
+                <div class="content cita">
+                  <div class="titulo">
+                    <img src="https://www.nespresso.com/ecom/medias/sys_master/public/13569948352542/icon-cup.svg?"
+                      alt="">
+                    <h3 class="quote">"Debemos focalizar nuestro propósito en generar valor."</h3>
+                  </div>
+
+                  <button id="escucharpodcast_bajer" data-evento="future" data-content="podcast"
+                    class="speak open-dialog" aria-label="Escuchá el Podcast">Escuchá el Podcast</button>
+                    
+                  
+                </div>
+              </div>
 
             </div>
             
@@ -451,7 +478,7 @@
   </div>
 
 
-  <script src="https://www.nespresso.com/ecom/medias/sys_master/public/13751081730078/eventsV11.js"></script>
+  <script src="./js/events.js"></script>
 
   <script>
     "use strict";
